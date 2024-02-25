@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://canvas.instructure.com/courses/7413444/pages/5-exploring-python?module_item_id=100843576 -->
+<html dir="ltr" lang="en-GB" style="--impact-supportCenterButton-zIndex-base: 9990; --impact-expertTools-zIndex-base: 9990;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="https://pp-beta.instructure.com/push/client.js?_=1708078422527"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#394B58">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="https://canvas.instructure.com/web-app-manifest/manifest.json">
+  <meta name="sentry-trace" content="04bc040be4b34ce7951bbbc141bbc1d0-c7aca53b97ff4ca4-0">
+  <title>5. Exploring Python: CSS 2024</title>
+
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./5. Exploring Python_ CSS 2024_files/fonts-6ee09b0b2f.css" media="screen">
+  <link rel="stylesheet" href="./5. Exploring Python_ CSS 2024_files/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css" media="all">
+  <link rel="stylesheet" href="./5. Exploring Python_ CSS 2024_files/common-e9786ec35c.css" media="all">
+  <link rel="stylesheet" href="./5. Exploring Python_ CSS 2024_files/wiki_page-bb0c0c1f96.css" media="screen">
+  <link rel="stylesheet" href="./5. Exploring Python_ CSS 2024_files/new_user_tutorials-2950c871dd.css" media="screen">
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png">
+  <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+
+  
+  
+  <script src="./5. Exploring Python_ CSS 2024_files/launch.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="./5. Exploring Python_ CSS 2024_files/heap-3001039959.js"></script><script async="" crossorigin="anonymous" src="./5. Exploring Python_ CSS 2024_files/fs.js"></script><script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+    INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"iad.rtmp.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"equellaEnabled":true,"logPageViews":true,"editorButtons":[{"name":"Commons Favourites","id":69910,"favorite":false,"url":"https://lor.instructure.com/api/lti/favorite-resources","icon_url":"https://lor.instructure.com/img/icon_commons.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":true,"description":"\u003cp\u003eFind and share course content\u003c/p\u003e\n"},{"name":"Microsoft Teams Meetings","id":361860,"favorite":false,"url":"https://msteams-lti-iad-prod.inscloudgate.net/resource_link_request","icon_url":"https://msteams-lti-iad-prod.inscloudgate.net/images/placement_icon.png","canvas_icon_class":null,"width":575,"height":700,"use_tray":false,"description":"\u003cp\u003eMicrosoft Teams Meetings integration for Canvas LMS\u003c/p\u003e\n"},{"name":"Code Highlight","id":688398,"favorite":false,"url":"https://lti.wyelearning.com/launch/code-highlight","icon_url":"https://code-highlight.wyelearning.com/icon.svg","canvas_icon_class":null,"width":800,"height":520,"use_tray":false,"description":"\u003cp\u003eEasily insert syntax highlighted code into the Canvas RCE\u003c/p\u003e\n"},{"name":"Markdown","id":688399,"favorite":false,"url":"https://lti.wyelearning.com/launch/markdown","icon_url":"https://markdown.wyelearning.com/icon.svg","canvas_icon_class":null,"width":800,"height":520,"use_tray":false,"description":"\u003cp\u003eAuthor markdown in the editor.\u003c/p\u003e\n"},{"name":"Code Highlight","id":688400,"favorite":false,"url":"https://lti.wyelearning.com/launch/code-highlight","icon_url":"https://code-highlight.wyelearning.com/icon.svg","canvas_icon_class":null,"width":800,"height":520,"use_tray":false,"description":"\u003cp\u003eEasily insert syntax highlighted code into the Canvas RCE\u003c/p\u003e\n"}],"pandaPubSettings":{"push_url":"https://pp-beta.instructure.com/push","application_id":"o9lhB0KU5xBx3SIiP8et"}};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.json","active_brand_config":null,"confetti_branding_enabled":false,"url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-fa0672d544.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-fa0672d544.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css"],"current_user_id":"110848077","current_user_global_id":"70000110848077","current_user_heap_id":"uu-2-79dbd540922f1c722f9e76e43f9e78f151356d37152171c649d8c114bc764ec9-ff2e5780-fa5b-012d-f7b3-123135003972","current_user_roles":["user","student"],"current_user_is_student":true,"current_user_types":[],"current_user_disabled_inbox":false,"current_user_visited_tabs":null,"discussions_reporting":false,"files_domain":"cluster7.canvas-user-content.com","group_information":null,"DOMAIN_ROOT_ACCOUNT_ID":"70000000000010","DOMAIN_ROOT_ACCOUNT_UUID":"ff2e5780-fa5b-012d-f7b3-123135003972","k12":false,"help_link_name":"Help","help_link_icon":"information","use_high_contrast":true,"auto_show_cc":false,"disable_celebrations":false,"disable_keyboard_shortcuts":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *","clipboard-write *","display-capture *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://canvas.instructure.com","comment_library_suggestions_enabled":false,"SETTINGS":{"open_registration":true,"collapse_global_nav":false,"release_notes_badge_disabled":false},"FULL_STORY_ENABLED":false,"RAILS_ENVIRONMENT":"Production","IN_PACED_COURSE":false,"SENTRY_FRONTEND":{"dsn":"https://355a1d96717e4038ac25aa852fa79a8f@relay-iad.sentry.insops.net/388","org_slug":"instructure","base_url":"https://sentry.insops.net","normalized_route":"/courses/{course_id}/pages/{id}","errors_sample_rate":"0.0005","traces_sample_rate":"0.0005","url_deny_pattern":"instructure-uploads.*amazonaws.com","revision":"canvas-lms@20240214.325"},"DATA_COLLECTION_ENDPOINT":"https://canvas-frontend-data-iad-prod.inscloudgate.net/submit","DOMAIN_ROOT_ACCOUNT_SFID":"001A000001FllZmIAJ","DIRECT_SHARE_ENABLED":false,"CAN_VIEW_CONTENT_SHARES":false,"FEATURES":{"featured_help_links":true,"account_level_blackout_dates":false,"deleted_user_tools":false,"render_both_to_do_lists":false,"course_paces_redesign":true,"course_paces_for_students":true,"explicit_latex_typesetting":false,"media_links_use_attachment_id":true,"permanent_page_links":true,"differentiated_modules":false,"enhanced_course_creation_account_fetching":false,"instui_for_import_page":false,"enhanced_rubrics":false,"multiselect_gradebook_filters":false,"product_tours":false,"usage_rights_discussion_topics":true,"granular_permissions_manage_users":true,"create_course_subaccount_picker":true,"lti_deep_linking_module_index_menu_modal":true,"lti_dynamic_registration":false,"lti_multiple_assignment_deep_linking":true,"lti_overwrite_user_url_input_select_content_dialog":true,"lti_unique_tool_form_ids":true,"buttons_and_icons_root_account":false,"extended_submission_state":false,"scheduled_page_publication":true,"send_usage_metrics":true,"rce_transform_loaded_content":false,"lti_assignment_page_line_items":true,"mobile_offline_mode":false,"react_discussions_post":false,"instui_nav":false,"enhanced_developer_keys_tables":false,"embedded_release_notes":true,"canvas_k6_theme":false,"new_math_equation_handling":true},"current_user":{"id":"110848077","anonymous_id":"1tzux9","display_name":"Winston Muthaphuli","avatar_image_url":"https://canvas.instructure.com/images/messages/avatar-50.png","html_url":"https://canvas.instructure.com/about/110848077","pronouns":null,"avatar_is_fallback":true},"current_user_is_admin":false,"page_view_update_url":"/page_views/3ff8827b-e4d4-4f9c-994d-f08af35ea9a3?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiM2ZmODgyN2ItZTRkNC00ZjljLTk5NGQtZjA4YWYzNWVhOWEzIiwidSI6NzAwMDAxMTA4NDgwNzcsImMiOiIyMDI0LTAyLTE2VDEwOjEzOjQxLjcxWiJ9.zXBvHsnAnPtFvDxgnI1G1LODSct-px7_89rCjWEYPSI","context_asset_string":"course_7413444","ping_url":"https://canvas.instructure.com/api/v1/courses/7413444/ping","TIMEZONE":"Africa/Harare","CONTEXT_TIMEZONE":"Africa/Johannesburg","LOCALES":["en-GB","en"],"BIGEASY_LOCALE":"en_GB","FULLCALENDAR_LOCALE":"en-gb","MOMENT_LOCALE":"en-gb","rce_auto_save_max_age_ms":86400000,"K5_USER":false,"USE_CLASSIC_FONT":false,"K5_HOMEROOM_COURSE":false,"K5_SUBJECT_COURSE":false,"LOCALE_TRANSLATION_FILE":"/dist/javascripts/translations/en-GB-70ae7d497f.json","ACCOUNT_ID":"81259","user_cache_key":"MDRWVWMzQW81ZndxbkJVQWNSOEZrSmlkMThuTVlQenNlcUJQY1ZRdHZ5Zlc9\nO1twLTA/OntQXz1IVXBncmFxZTtuamFsa2hwdm9pdWxraW1tYXFld2c=\n","WIKI_PAGE_PANDAPUB":{"CHANNEL":"/private/wiki_page/70000027253329/update","TOKEN":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXlJZCI6IlBTSURXYVZkd0I4SmhNcDcyeU03IiwiY2hhbm5lbCI6Ii9vOWxoQjBLVTV4QngzU0lpUDhldC9wcml2YXRlL3dpa2lfcGFnZS83MDAwMDAyNzI1MzMyOS91cGRhdGUiLCJwdWIiOmZhbHNlLCJzdWIiOnRydWUsImV4cCI6MTcwODA4MjAyMX0.h1mssORf_keAbssYl_9kcKY9Im7XNTqeGyxdZE5nzwo"},"CONFIRMED":true,"current_user_created_at":1705962013,"WIKI_RIGHTS":{"read":true},"PAGE_RIGHTS":{"read":true},"DEFAULT_EDITING_ROLES":"teachers","WIKI_PAGES_PATH":"/courses/7413444/pages","WIKI_PAGE":{"title":"5. Exploring Python","created_at":"2024-01-21T22:52:50+02:00","url":"5-exploring-python","editing_roles":"teachers","page_id":"27253329","last_edited_by":{"id":"27931652","anonymous_id":"gmo78","display_name":"Binjamin Barsch","avatar_image_url":"https://canvas.instructure.com/images/messages/avatar-50.png","html_url":"https://canvas.instructure.com/courses/7413444/users/27931652","pronouns":null},"published":true,"hide_from_students":false,"front_page":false,"html_url":"https://canvas.instructure.com/courses/7413444/pages/5-exploring-python","todo_date":null,"publish_at":null,"updated_at":"2024-02-01T23:34:36+02:00","locked_for_user":false,"body":"\u003ch1\u003eExploring Python\u003c/h1\u003e\n\n\u003ch2\u003eJupyter Notebook\u003c/h2\u003e\n\n\u003cp\u003eUp till now we have been using the Spyder IDE or the Python coding environment. I hope you have become familiar with it. Now there are many others out there built for different purposes. Like PyCharm and VS Code, and many many more. However, if you are learning Python and applying it to some data science application, then you have to know about Jupyter Notebooks. \u003c/p\u003e\n\n\u003cp\u003eA Jupyter Notebook is an interactive web applications that facilitate creating and sharing documents that contain live code, equations, visualizations, and narrative text. They are widely used in data science, scientific research, and education.\u003c/p\u003e\n\n\u003cp\u003eMany teachers use it to present content, as you will see in week 2. Many tutorials on line use Jupyter Notebooks to convey ideas and principles. So it is quite important to understand how to use it, if you want to follow a tutorial or lesson. \u003c/p\u003e\n\n\u003cp\u003eThere is a newer version of Jupyter Notebook called Jupyter Lab, but essentialy the same thing. The latter just have more features.\u003c/p\u003e\n\n\u003ch3\u003eGetting Started\u003c/h3\u003e\n\n\u003cp\u003eSo the call thing about the Anaconda workspace you installed is that it has Jupyter Notebook installed already for you. So if go to you windows app, and type \"Jupyter\", you should see:\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/41143f23-2e3c-42c7-9749-00baa74e2f51\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eClick on that and you should see a windows terminal pop up and a browser window:\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/41b75678-384d-40f8-a49f-1d3492d891e6\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eGo to the \"New\" tab and click on \"Python 3 (ipykernal\")\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/1a0d0608-54b4-4bf1-a92b-06479e6a1cb1\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eYou should then see the following:\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/d6f57945-a452-4a34-97a5-1ada1ce26fa9\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eSo what is the difference between Jupyter Notebook and a Python script file. \u003c/p\u003e\n\n\u003cp\u003eWell it is more interactive, it is like a combination of a Python script and the console. You can also write in two modes, the is code the other is like a word document. This helps to explain what your doing throughout the document.\u003c/p\u003e\n\n\u003cp\u003eLet us see a few examples in action.\u003c/p\u003e\n\n\u003cp\u003eLet us go back to the one of our first lessons when we were using the country_data.csv file. We first learnt to input this data into lists. Let us do the same in a Jupyter Notebook. Enter the following list and click on \"Run\":\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eage = [30,40,30,49,22,35,22,46,29,25,39]\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/78a26b20-73cf-4156-92c9-9a315389890e\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eNow to print the data of \"age\" to the screen we can just input \"age\" and click on \"Run\":\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/bef151c4-5232-4980-9169-baafc96234c3\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eSimilar to what we get in a Python console. However, now you can remove or add a cell, like you do in a script. Note you can also use the \u003ccode style=\"font-size: 20px;\"\u003eprint()\u003c/code\u003e function to display it but it is not necessary.\u003c/p\u003e\n\n\u003cp\u003eInstead of press run you can press \"Shift\" + \"F5\" to run a cell.\u003c/p\u003e\n\n\u003cp\u003eNow you will notice there is drop-down that says code, if you click on you will see a few text options:\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/41d27805-49d5-4ea1-8a59-1965a7205741\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eNow I added some text, not code, and then an image at the end:\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/93a44532-9eba-462c-a5cc-567292da3a9c\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eThis is what makes Jupyter Notebook really usefull for teaching as you can easily add non-code items to you Jupyter Notebook, and essentially tell a story of your code.\u003c/p\u003e\n\n\u003ch3\u003ePandas\u003c/h3\u003e\n\n\u003cp\u003eLet us try read in some data.\u003c/p\u003e\n\n\u003cp\u003eLet us first upload the file, do that by going to File-\u0026gt;Open:\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/8b78cef7-e037-4502-883d-0d0753a3613d\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eThen click on the \"Upload\" button and the select the \"country_data.csv\":\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/776fbaa2-901c-458c-b851-b7b72bd54ae4\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eGo back to your Jupyter Notebook and input the following code:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport pandas as pd\n\ndf = pd.read_csv(\"country_data.csv\")\n\ndf\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eWhen you click on \"Run\", you get the following:\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/548031e9-3cc5-4b3b-b764-ba951dc83e25\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003cp\u003eWhich is quite a nice representation.\u003c/p\u003e\n\n\u003ch3\u003eVisualization\u003c/h3\u003e\n\n\u003cp\u003eNow we are going to look at plotting some graphs.\u003c/p\u003e\n\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/c44058a9-b289-402e-98cf-b8db81942de1\" alt=\"image\"\u003e\u003c/p\u003e\n\n\u003ch2\u003eNumerical Calculations - stdev \u0026amp; R^2\u003c/h2\u003e\n\n\u003ch3\u003eStdev\u003c/h3\u003e\n\n\u003cp\u003eOne of the outputs we showed was the standard deviation of the age list from the excel data set. Now we can do this in Python too quite easily with a built-in function but for the purposes of learning we are going to do a manual approach since we learnt all the tools needed now to do it. To work out the population standard deviation we need to do the following:\u003c/p\u003e\n\n\u003col\u003e\n\u003cli\u003eCalculate the mean (average) of each data set.\u003c/li\u003e\n\u003cli\u003eSubtract the deviance of each piece of data by subtracting the mean from each number.\u003c/li\u003e\n\u003cli\u003eSquare each deviation.\u003c/li\u003e\n\u003cli\u003eAdd all the squared deviations.\u003c/li\u003e\n\u003cli\u003eDivide the value obtained in step four by the number of items in the data set.\u003c/li\u003e\n\u003cli\u003eCalculate the square root of the value obtained in step five.\u003c/li\u003e\n\u003c/ol\u003e\n\n\u003cp\u003eWe have partially done this before. Let us complete the entire process:\u003c/p\u003e\n\n\u003cp\u003eStep 1. Given the age list we first need to find the mean of the list:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eage=[39, 25, 29, 46, 22, 35, 22, 49, 30, 40, 30]\n\nmean = sum(age)/len(age)\n\nprint(mean)\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eStep 2. Now we need to subtract the mean from value in the list and square the result:\u003c/p\u003e\n\n\u003cp\u003eWe are first going to create an empty list that will store the squared differences called sq\u003cem\u003ediff\u003c/em\u003elist and then we are going to create a for loop to run through each value in the age list, subtract the mean, square the result and store in the sq\u003cem\u003ediff\u003c/em\u003elist variable:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e# Create empty list\nsq_diff_list = []\n\n# Setup for loop\nfor i in range(len(age)):\n\n    # Take average from each value in age list and square outcome. Note we square use double asterisks\n    # sq_diff we are just using as a temporary variable to store the result\n    sq_diff = (age[i] - mean)**2\n\n    # add the results to the `sq_diff_list` list \n    sq_diff_list.append(sq_diff)\n\n    # print the result\n    print(sq_diff)\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eNow we need to work out the mean of the sq\u003cem\u003ediff\u003c/em\u003elist and square the result:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003emean_sq_diff = sum(sq_diff_list)/len(sq_diff_list)\nprint(mean_sq_diff**0.5)\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eThis process was quite tedious and in practice you would not do this as there is a built-in Python function to do it as shown below:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport numpy\nage=[39, 25, 29, 46, 22, 35, 22, 49, 30, 40, 30]\nprint(numpy.std(age))\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch3\u003eR^2\u003c/h3\u003e\n\n\u003cp\u003eUnfortunately, R-squared calculation is not implemented in numpy… so we will be doing it by hand using the following code:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport numpy as np\nhours = [29, 9, 10, 38, 16, 26, 50, 10, 30, 33, 43, 2, 39, 15, 44, 29, 41, 15, 24, 50]\nresults = [65, 7, 8, 76, 23, 56, 100, 3, 74, 48, 73, 0, 62, 37, 74, 40, 90, 42, 58, 100]\nx = np.asarray(hours)\ny = np.asarray(results)\nsum_x = np.sum(x)\nsum_x_2 = np.sum(np.square(x))\nsum_y = np.sum(y)\nsum_y_2 = np.sum(np.square(y))\nsum_xy = np.sum(x*y)\nprint(f\"sum_x = {sum_x}\")\nprint(f\"sum_x_2 = {sum_x_2}\")\nprint(f\"sum_y = {sum_y}\")\nprint(f\"sum_y_2 = {sum_y_2}\")\nprint(f\"sum_xy = {sum_xy}\")\nn = len(x)\nprint(f\"n = {n}\")\ntop = n*sum_xy - sum_x*sum_y\nprint(f\"top = {top}\")\nbot_a = np.sqrt(n*sum_x_2 - np.square(sum_x))\nbot_b = np.sqrt(n*sum_y_2 - np.square(sum_y))\nbot = bot_a*bot_b\nprint(f\"bot = {bot}\")\nR_2 = np.square(top/bot)\nprint(f\"R_2 = {R_2}\")\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eOutput:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003esum_x = 553\nsum_x_2 = 19345\nsum_y = 1036\nsum_y_2 = 72414\nsum_xy = 36814\nn = 20\ntop = 163372\nbot = 174378.40331875964\nR_2 = 0.8777480188408425\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003ePractically, we should just use a Python library called sklearn that can do this for us but doing the manual approach allows us to learn more about Python. \u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport numpy as np\nfrom sklearn.metrics import r2_score\nimport matplotlib.pyplot as plt\n\n# Data\nhours = [29, 9, 10, 38, 16, 26, 50, 10, 30, 33, 43, 2, 39, 15, 44, 29, 41, 15, 24, 50]\nresults = [65, 7, 8, 76, 23, 56, 100, 3, 74, 48, 73, 0, 62, 37, 74, 40, 90, 42, 58, 100]\n\n# Fit a linear regression model\nmodel = np.polyfit(hours, results, 1)\npredict = np.poly1d(model)\n\n# Calculate R-squared\nr2 = r2_score(results, predict(hours))\nprint(\"R-squared:\", r2)\n\n# Scatter plot\nplt.scatter(hours, results, label='Actual data')\n\n# Regression line plot\nplt.plot(hours, predict(hours), color='red', label='Regression line')\n\n# Labels and title\nplt.xlabel('Hours')\nplt.ylabel('Results')\nplt.title('Scatter Plot with Regression Line')\n\n# Show legend\nplt.legend()\n\n# Display the plot\nplt.show()\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eOutput:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e0.8777480188408424\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch3\u003eSome issues with Jupyter Notebook\u003c/h3\u003e\n\n\u003cp\u003eWhile Jupyter Notebooks are a popular and powerful tool for data analysis, scientific computing, and interactive programming in Python, there are some downsides and reasons why they might not be recommended for beginners, especially when just starting to learn Python:\u003c/p\u003e\n\n\u003cp\u003eIn Jupyter Notebooks, code can be executed out of order, leading to confusion for beginners. The order in which cells are executed matters, and this can make it challenging to understand the flow of the program. Some other issues are variables and their values persist across cells, which can make it difficult to track the state of the program.\u003c/p\u003e\n\n\u003ch2\u003eAutomation\u003c/h2\u003e\n\n\u003ch3\u003ePython\u003c/h3\u003e\n\n\u003cp\u003eLet us say we have 10 csv files with 2 columns each, x and y. We want to add up all the values in column y and store it in a list. Let us write a python script to do it first then in bash.\u003c/p\u003e\n\n\u003cp\u003eDownload and extract the \u003ccode style=\"font-size: 20px;\"\u003ecsv_files.zip\u003c/code\u003e folder and put it in your project directory.\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport pandas as pd\nimport os\n\n# List to store the sum of 'y' column values for each file\nsum_list = []\n\n# Directory containing CSV files\ndirectory = './csv_files/'\n\n# Loop through each CSV file in the directory\nfor filename in os.listdir(directory):\n    print(f\"Processing...Filename = {filename}\")\n    if filename.endswith('.csv'):\n        file_path = os.path.join(directory, filename)\n\n\n        # Read the CSV file using pandas\n        df = pd.read_csv(file_path)\n\n        # Calculate the sum of 'y' column and append to the list\n        total_sum = df['y'].sum()\n        sum_list.append(total_sum)\n\n# Print the list of sums\nprint(\"Sum of 'y' column values for each file:\", sum_list)\n\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eOutput:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eProcessing...Filename = file_1.csv\nProcessing...Filename = file_10.csv\nProcessing...Filename = file_2.csv\nProcessing...Filename = file_3.csv\nProcessing...Filename = file_4.csv\nProcessing...Filename = file_5.csv\nProcessing...Filename = file_6.csv\nProcessing...Filename = file_7.csv\nProcessing...Filename = file_8.csv\nProcessing...Filename = file_9.csv\nProcessing...Filename = read_csv.sh\nSum of 'y' column values for each file: [4945, 5029, 5400, 4753, 5248, 4860, 5084, 49\n79, 5581, 5217]\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch3\u003eBash\u003c/h3\u003e\n\n\u003cp\u003eDoing the same with a bash script:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e#!/bin/bash\n\n# Directory containing CSV files\ndirectory='csv_files/'\n#directory='/c/Users/BBarsch.CSIR/css2024_day03/csv_files'\n\n# List to store the sum of 'y' column values for each file\nsum_list=()\n\n# Loop through each CSV file in the directory\nfor filename in \"$directory\"/*.csv; do\n    if [ -f \"$filename\" ]; then\n        # Use awk to sum the 'y' column values\n        echo $filename\n        total_sum=$(awk -F',' 'NR \u0026gt; 1 {sum += $2} END {print sum}' \"$filename\")\n\n        # Append the sum to the list\n        sum_list+=(\"$total_sum\")\n    fi\ndone\n\n# Print the list of sums\necho \"Sum of 'y' column values for each file: ${sum_list[@]}\"\n\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eOutput:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003ecsv_files//file_1.csv\ncsv_files//file_10.csv\ncsv_files//file_2.csv\ncsv_files//file_3.csv\ncsv_files//file_4.csv\ncsv_files//file_5.csv\ncsv_files//file_6.csv\ncsv_files//file_7.csv\ncsv_files//file_8.csv\ncsv_files//file_9.csv\nSum of 'y' column values for each file: 4945 5029 5400 4753 5248 4860 5084 4979 5581 5217\n\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch3\u003eBash with Python\u003c/h3\u003e\n\n\u003cp\u003eAny time you get access to a web server your access will most likey be in some format of terminal - most likely a Bash terminal. While Bash is quite useful and you can do many things with it, it is quite limited to the functionality of Python and what Pandas can do. Many times you would manage your files with Bash but run a Python script to do the processing of it. \u003c/p\u003e\n\n\u003cp\u003eThe script below combines the two codes we did before.\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e#!/bin/bash\n\n# This is a comment so the terminal will ignore this line\n# ... you can write anything here\n\necho \"Process files\"\n\nwinpty python read_csv_files.py\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eOutput:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e$ ./run_python.sh\nProcess files\nProcessing...Filename = file_1.csv\nProcessing...Filename = file_10.csv\nProcessing...Filename = file_2.csv\nProcessing...Filename = file_3.csv\nProcessing...Filename = file_4.csv\nProcessing...Filename = file_5.csv\nProcessing...Filename = file_6.csv\nProcessing...Filename = file_7.csv\nProcessing...Filename = file_8.csv\nProcessing...Filename = file_9.csv\nSum of 'y' column values for each file: [4945, 5029, 5400, 4753, 5248, 4860, 5084, 4979, 5581, 5217]\n\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eThis is a very simple calculation, imagine you had a lot more data and more complete problems to solve...if so then a supercomputer is the way to go! Remember all the code we have learnt up to now is sequential. Things are done one after the other. If we distribute that work load it can be done quicker.\u003c/p\u003e\n\n\u003ch2\u003ePandas Profiling:\u003c/h2\u003e\n\n\u003cp\u003eOpen Anaconda Prompt and input the following:\u003c/p\u003e\n\n\u003col\u003e\n\u003cli\u003e\u003ccode style=\"font-size: 20px;\"\u003econda create --name eda\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode style=\"font-size: 20px;\"\u003econda activate eda\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode style=\"font-size: 20px;\"\u003econda install conda-forge::ydata-profiling\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode style=\"font-size: 20px;\"\u003ejupyter notebook\u003c/code\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\n\u003cp\u003eCode:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport numpy as np\nimport pandas as pd\nfrom ydata_profiling import ProfileReport\n\ndf = pd.DataFrame(np.random.rand(100, 5), columns=[\"a\", \"b\", \"c\", \"d\", \"e\"])\n\nprofile = ProfileReport(df, title=\"Pandas Profiling Report\")\n\nprofile\n\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eResources\u003c/h2\u003e\n\n\u003cp\u003eGithub Desktop\u003c/p\u003e\n\n\u003cp\u003ehttps://survey.stackoverflow.co/2023/#technology\u003c/p\u003e\n\n\u003cp\u003ehttps://automatetheboringstuff.com/\u003c/p\u003e\n\n\u003cp\u003ehttps://www.offerzen.com/reports/software-developer-south-africa\u003c/p\u003e\n\n\u003cp\u003ehttps://streamlit.io/\u003c/p\u003e\n\n\u003cp\u003ehttps://pypi.org/project/pygwalker/\u003c/p\u003e\n\n\u003cp\u003ehttps://openrefine.org/\u003c/p\u003e\n\n\u003cp\u003ehttps://www.kaggle.com/\u003c/p\u003e\n\n\u003cp\u003e\"Kaggle is an online community platform for data scientists and machine learning enthusiasts. Kaggle allows users to collaborate with other users, find and publish datasets, use GPU integrated notebooks, and compete with other data scientists to solve data science challenges.\"\u003c/p\u003e\n\n\u003cp\u003ehttps://www.datacamp.com/courses/intro-to-python-for-data-science\u003c/p\u003e\n\n\u003ch2\u003eCHPC Winter School\u003c/h2\u003e\n\n\u003cp\u003ehttps://events.chpc.ac.za/event/123/\u003c/p\u003e\n"},"WIKI_PAGE_REVISION":"4","WIKI_PAGE_SHOW_PATH":"/courses/7413444/pages/5-exploring-python","WIKI_PAGE_EDIT_PATH":"/courses/7413444/pages/5-exploring-python/edit","WIKI_PAGE_HISTORY_PATH":"/courses/7413444/pages/5-exploring-python/revisions","COURSE_ID":"7413444","MODULES_PATH":"/courses/7413444/modules","wiki_page_menu_tools":[],"wiki_index_menu_tools":[],"DISPLAY_SHOW_ALL_LINK":false,"CAN_SET_TODO_DATE":false,"TITLE_AVAILABILITY_PATH":"/api/v1/courses/7413444/page_title_availability","badge_counts":{"submissions":5},"notices":[],"active_context_tab":"pages"};
+    BRANDABLE_CSS_HANDLEBARS_INDEX = [["new_styles_normal_contrast","new_styles_high_contrast","new_styles_normal_contrast_rtl","new_styles_high_contrast_rtl"],{"10":["8300658022",0,"250b5824c2",2],"15":["fc26aa5fd4",0,"f904416063",2],"19":["df5777ed9c"],"61":["f3934dab06","f405852bb2","ee5810890b","3fd9943b9a"],"67":["8b57f54e71",0,"43833dde85",2],"71":["35b89b103a","4304be7d41","58dbfc2651","2932678b1c"],"06":["cb9f63cba6",0,"2be010fc14",2],"f0":["7c947dce20",0,0,0],"c8":["12d5e4d1e8","9f7b02d283","4ebd280f3e","b547456f4c"],"1e":["02e336724a","d7bb142b0a","d7ac7fdfb8","c03b9b261e"],"b3":["8ebc71ebc3","cf8efa05c8","4efdc93a21","fd6d3a9780"],"0c":["c26e82abac",0,"b71e9cbd6d",2],"da":["efb9fe6d7c","edbd1b5e83","a6dc56afb7","dfb2d13098"],"1d":["a3bfcb7961",0,"90682b3bbe",2],"08":["64bff5a97d"],"e2":["11429f119a"],"9f":["35936a18c3",0,0,0],"2b":["abf63f48ef","bf8e135ffe","378e0c136b","9833e305e6"],"2c":["6d919206cd",0,0,0],"c2":["6f2721ae01"],"9c":["ecafc938e4",0,"59e7c22304",2],"c5":["ebf0e1382f","7f587d9a8a","afbdabf23d","0d398196a8"],"f2":["51574f9b13"]}]
+  </script>
+  <script src="./5. Exploring Python_ CSS 2024_files/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.js" defer="defer"></script>
+  <script src="./5. Exploring Python_ CSS 2024_files/Harare-3a979b3e76.js" defer="defer"></script>
+  <script src="./5. Exploring Python_ CSS 2024_files/Johannesburg-e1ae720d47.js" defer="defer"></script>
+  <script src="./5. Exploring Python_ CSS 2024_files/en_GB-31745e04c9.js" defer="defer"></script>
+  <script src="./5. Exploring Python_ CSS 2024_files/react-entry-0d2331729ba2f215.js" crossorigin="anonymous" defer="defer"></script>
+  <script src="./5. Exploring Python_ CSS 2024_files/main-entry-fa6dd94dd54428bc.js" crossorigin="anonymous" defer="defer"></script>
+<script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('wiki_page_show');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+  
+  
+  
+  <!-- fullstory snippet -->
+  <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+    window['_fs_org'] = 'S28S2';
+    window['_fs_namespace'] = 'FS';
+    (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+        o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+        g.log = function(a,b){g("log",[a,b])};
+        g.consent=function(a){g("consent",!arguments.length||a)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+        g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+        if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+        g._v="1.1.1";
+    })(window,document,window['_fs_namespace'],'script','user');
+
+    FS.identify('70000110848077')
+    // These variables are useful for providing filterable values
+    // to product analysts so that we can find just the sessions
+    // that involved a user with a given feature or experience enabled.
+    FS.setUserVars({
+      accountName_str: 'Free for Teacher',
+      feature_homeroom_course_bool: false,
+      roles_str: 'student',
+      k5_user_bool: false,
+      org_type_str: 'Higher Ed'
+    })
+  </script>
+
+  <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+    heap.load("3001039959");
+    heap.clearEventProperties();
+    heap.addEventProperties({'Base.appName': 'Canvas'});
+    setTimeout(() => {
+      if (ENV.current_user_heap_id && ENV.current_user_heap_id !== heap.identity) {
+        heap.identify(ENV.current_user_heap_id);
+      }
+      props = {}
+      if (ENV.current_user_roles) {
+        props['role'] = ENV.current_user_roles[ENV.current_user_roles.length - 1]
+      }
+      if (ENV.DOMAIN_ROOT_ACCOUNT_UUID) {
+        props['Canvas.accountId'] = ENV.DOMAIN_ROOT_ACCOUNT_UUID
+      }
+      if (ENV.DOMAIN_ROOT_ACCOUNT_SFID) {
+        props['Canvas.salesforceAccountId'] = ENV.DOMAIN_ROOT_ACCOUNT_SFID
+      }
+      if (Object.keys(props).length > 0) {
+        heap.addUserProperties(props);
+      }
+    }, 1000);
+  </script>
+  
+<style type="text/css"></style><style type="text/css">.mejs-offscreen{clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:polygon(0px 0,0 0,0 0,0 0);position:absolute!important;height:1px;width:1px;overflow:hidden}.mejs-container{position:relative;background:#000;font-family:Helvetica,Arial,serif;text-align:left;vertical-align:top;text-indent:0}.mejs-fill-container,.mejs-fill-container .mejs-container{width:100%;height:100%}.mejs-fill-container{overflow:hidden}.mejs-container:focus{outline:0}.me-plugin{position:absolute}.mejs-embed,.mejs-embed body{width:100%;height:100%;margin:0;padding:0;background:#000;overflow:hidden}.mejs-fullscreen{overflow:hidden!important}.mejs-container-fullscreen{position:fixed;left:0;top:0;right:0;bottom:0;overflow:hidden;z-index:1000}.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video{width:100%;height:100%}.mejs-clear{clear:both}.mejs-background{position:absolute;top:0;left:0}.mejs-mediaelement{position:absolute;top:0;left:0;width:100%;height:100%}.mejs-poster{position:absolute;top:0;left:0;background-size:contain;background-position:50% 50%;background-repeat:no-repeat}:root .mejs-poster img{display:none}.mejs-poster img{border:0;padding:0}.mejs-overlay{position:absolute;top:0;left:0}.mejs-overlay-play{cursor:pointer}.mejs-overlay-button{position:absolute;top:50%;left:50%;width:100px;height:100px;margin:-50px 0 0 -50px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/746c3af7a145a09239a36e5ef61cfea0.svg) no-repeat}.no-svg .mejs-overlay-button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/716436fb3df0d29e6b37dd62d952676a.png)}.mejs-overlay:hover .mejs-overlay-button{background-position:0 -100px}.mejs-overlay-loading{position:absolute;top:50%;left:50%;width:80px;height:80px;margin:-40px 0 0 -40px;background:#333;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.9);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.9)),to(rgba(0,0,0,.9)));background:-webkit-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-moz-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-o-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-ms-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:linear-gradient(rgba(50,50,50,.9),rgba(0,0,0,.9))}.mejs-overlay-loading span{display:block;width:80px;height:80px;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat}.mejs-container .mejs-controls{position:absolute;list-style-type:none;margin:0;padding:0;bottom:0;left:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));height:30px;width:100%}.mejs-container .mejs-controls div{list-style-type:none;background-image:none;display:block;float:left;margin:0;padding:0;width:26px;height:26px;font-size:11px;line-height:11px;font-family:Helvetica,Arial,serif;border:0}.mejs-controls .mejs-button button{cursor:pointer;display:block;font-size:0;line-height:0;text-decoration:none;margin:7px 5px;padding:0;position:absolute;height:16px;width:16px;border:0;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/40f56f5a736da4effeb790cedb8a52f0.svg) no-repeat}.no-svg .mejs-controls .mejs-button button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/24a0227fbdd3acfd86ff03fc3fc6c8a4.png)}.mejs-controls .mejs-button button:focus{outline:dotted 1px #999}.mejs-container .mejs-controls .mejs-time{color:#fff;display:block;height:17px;width:auto;padding:10px 3px 0;overflow:hidden;text-align:center;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}.mejs-container .mejs-controls .mejs-time a{color:#fff;font-size:11px;line-height:12px;display:block;float:left;margin:1px 2px 0 0;width:auto}.mejs-controls .mejs-play button{background-position:0 0}.mejs-controls .mejs-pause button{background-position:0 -16px}.mejs-controls .mejs-stop button{background-position:-112px 0}.mejs-controls div.mejs-time-rail{direction:ltr;width:200px;padding-top:5px}.mejs-controls .mejs-time-rail span,.mejs-controls .mejs-time-rail a{display:block;position:absolute;width:180px;height:10px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer}.mejs-controls .mejs-time-rail .mejs-time-total{margin:5px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-time-rail .mejs-time-buffering{width:100%;background-image:-o-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,.15)),color-stop(0.75,rgba(255,255,255,.15)),color-stop(0.75,transparent),to(transparent));background-image:-webkit-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-ms-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px;background-size:15px 15px;-webkit-animation:buffering-stripes 2s linear infinite;-moz-animation:buffering-stripes 2s linear infinite;-ms-animation:buffering-stripes 2s linear infinite;-o-animation:buffering-stripes 2s linear infinite;animation:buffering-stripes 2s linear infinite}@-webkit-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-moz-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-ms-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-o-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}.mejs-controls .mejs-time-rail .mejs-time-loaded{background:#3caac8;background:rgba(60,170,200,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(44,124,145,.8)),to(rgba(78,183,212,.8)));background:-webkit-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-moz-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-o-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-ms-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:linear-gradient(rgba(44,124,145,.8),rgba(78,183,212,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-current{background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-handle{display:none;position:absolute;margin:0;width:10px;background:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;cursor:pointer;border:solid 2px #333;top:-2px;text-align:center}.mejs-controls .mejs-time-rail .mejs-time-float{position:absolute;display:none;background:#eee;width:36px;height:17px;border:solid 1px #333;top:-26px;margin-left:-18px;text-align:center;color:#111}.mejs-controls .mejs-time-rail .mejs-time-float-current{margin:2px;width:30px;display:block;text-align:center;left:0}.mejs-controls .mejs-time-rail .mejs-time-float-corner{position:absolute;display:block;width:0;height:0;line-height:0;border:solid 5px #eee;border-color:#eee transparent transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:15px;left:13px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float{width:48px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current{width:44px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner{left:18px}.mejs-controls .mejs-fullscreen-button button{background-position:-32px 0}.mejs-controls .mejs-unfullscreen button{background-position:-32px -16px}.mejs-controls .mejs-volume-button{}.mejs-controls .mejs-mute button{background-position:-16px -16px}.mejs-controls .mejs-unmute button{background-position:-16px 0}.mejs-controls .mejs-volume-button{position:relative}.mejs-controls .mejs-volume-button .mejs-volume-slider{height:115px;width:25px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}.mejs-controls .mejs-volume-button:hover{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.5);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.9);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle{position:absolute;left:4px;top:-3px;width:16px;height:6px;background:#ddd;background:rgba(255,255,255,.9);cursor:N-resize;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;margin:0}.mejs-controls a.mejs-horizontal-volume-slider{height:26px;width:56px;position:relative;display:block;float:left;vertical-align:middle}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle{display:none}.mejs-controls .mejs-captions-button{position:relative}.mejs-controls .mejs-captions-button button{background-position:-48px 0}.mejs-controls .mejs-captions-button .mejs-captions-selector{position:absolute;bottom:26px;right:-51px;width:85px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px 10px 0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-captions-button .mejs-captions-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label{width:55px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-controls .mejs-captions-button .mejs-captions-translations{font-size:10px;margin:0 0 5px}.mejs-chapters{position:absolute;top:0;left:0;border-right:solid 1px #fff;width:10000px;z-index:1}.mejs-chapters .mejs-chapter{position:absolute;float:left;background:#222;background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232, endColorstr=#000000);overflow:hidden;border:0}.mejs-chapters .mejs-chapter .mejs-chapter-block{font-size:11px;color:#fff;padding:5px;display:block;border-right:solid 1px #333;border-bottom:solid 1px #333;cursor:pointer}.mejs-chapters .mejs-chapter .mejs-chapter-block-last{border-right:0}.mejs-chapters .mejs-chapter .mejs-chapter-block:hover{background:#666;background:rgba(102,102,102,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(102,102,102,.7)),to(rgba(50,50,50,.6)));background:-webkit-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-moz-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-o-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-ms-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:linear-gradient(rgba(102,102,102,.7),rgba(50,50,50,.6));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666, endColorstr=#323232)}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title{font-size:12px;font-weight:700;display:block;white-space:nowrap;text-overflow:ellipsis;margin:0 0 3px;line-height:12px}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan{font-size:12px;line-height:12px;margin:3px 0 4px;display:block;white-space:nowrap;text-overflow:ellipsis}.mejs-captions-layer{position:absolute;bottom:0;left:0;text-align:center;line-height:20px;font-size:16px;color:#fff}.mejs-captions-layer a{color:#fff;text-decoration:underline}.mejs-captions-layer[lang=ar]{font-size:20px;font-weight:400}.mejs-captions-position{position:absolute;width:100%;bottom:15px;left:0}.mejs-captions-position-hover{bottom:35px}.mejs-captions-text,.mejs__captions-text *{padding:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(20,20,20,.5);white-space:pre-wrap;-webkit-box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5);box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5)}.me-cannotplay{}.me-cannotplay a{color:#fff;font-weight:700}.me-cannotplay span{padding:15px;display:block}.mejs-controls .mejs-loop-off button{background-position:-64px -16px}.mejs-controls .mejs-loop-on button{background-position:-64px 0}.mejs-controls .mejs-backlight-off button{background-position:-80px -16px}.mejs-controls .mejs-backlight-on button{background-position:-80px 0}.mejs-controls .mejs-picturecontrols-button{background-position:-96px 0}.mejs-contextmenu{position:absolute;width:150px;padding:10px;border-radius:4px;top:0;left:0;background:#fff;border:solid 1px #999;z-index:1001}.mejs-contextmenu .mejs-contextmenu-separator{height:1px;font-size:0;margin:5px 6px;background:#333}.mejs-contextmenu .mejs-contextmenu-item{font-family:Helvetica,Arial,serif;font-size:12px;padding:4px 6px;cursor:pointer;color:#333}.mejs-contextmenu .mejs-contextmenu-item:hover{background:#2C7C91;color:#fff}.mejs-controls .mejs-sourcechooser-button{position:relative}.mejs-controls .mejs-sourcechooser-button button{background-position:-128px 0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector{position:absolute;bottom:26px;right:-10px;width:130px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{width:100px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-postroll-layer{position:absolute;bottom:0;left:0;width:100%;height:100%;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);z-index:1000;overflow:hidden}.mejs-postroll-layer-content{width:100%;height:100%}.mejs-postroll-close{position:absolute;right:0;top:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);color:#fff;padding:4px;z-index:100;cursor:pointer}div.mejs-speed-button{width:46px!important;position:relative}.mejs-controls .mejs-button.mejs-speed-button button{background:transparent;width:36px;font-size:11px;line-height:normal;color:#fff}.mejs-controls .mejs-speed-button .mejs-speed-selector{position:absolute;top:-100px;left:-10px;width:60px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label.mejs-speed-selected{color:rgba(33,248,248,1)}.mejs-controls .mejs-speed-button .mejs-speed-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li{margin:0 0 6px;padding:0 10px;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label{width:60px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:11px;color:#fff;margin-left:5px;cursor:pointer}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li:hover{background-color:#c8c8c8!important;background-color:rgba(255,255,255,.4)!important}.mejs-controls .mejs-button.mejs-jump-forward-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/15e1ac8cbacc2efdf1ac2677de48a253.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-jump-forward-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}.mejs-controls .mejs-button.mejs-skip-back-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/cd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-skip-back-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}</style><style type="text/css">/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* customizations to mediaelementplayer css */
+
+/*
+  Because this file is not proccessed by our brandable_css sass pipeline,
+  it cannot use our sass-direction helpers. So we have to handle RTL manually
+  by putting direction-specific styles in [dir="ltr"] or [dir="rtl"] blocks.
+*/
+/* stylelint-disable property-disallowed-list, declaration-property-value-disallowed-list */
+
+/* good menu widths */
+.mejs-sourcechooser-selector {
+  width: 160px;
+}
+.mejs-sourcechooser-selector label {
+  width: 160px !important;
+}
+
+.mejs-captions-selector {
+  width: 105px;
+}
+[dir="ltr"]  .mejs-captions-selector { text-align: left }
+[dir="rtl"]  .mejs-captions-selector { text-align: right }
+
+.mejs-captions-selector label {
+  width: 70px !important;
+}
+
+/* Subtitile upload link */
+.mejs-captions-selector .upload-track {
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+[dir="ltr"] .mejs-captions-selector .upload-track {
+  margin-right: 0px;
+  margin-left: 5px;
+  float: left;
+}
+[dir="rtl"] .mejs-captions-selector .upload-track {
+  margin-left: 0px;
+  margin-right: 5px;
+  float: right;
+}
+
+/* inherited caption "?" icon for tooltip */
+.mejs-captions-selector .track-tip-container {
+  position: absolute;
+  top: 5px;
+}
+
+/* "x" button to remove a subtitle */
+.mejs-captions-selector a[data-remove] {
+  position: absolute;
+  top: 5px;
+  color: white;
+}
+[dir="ltr"] .mejs-captions-selector a[data-remove] { right: 5px }
+[dir="rtl"] .mejs-captions-selector a[data-remove] { left: 5px }
+
+[dir="ltr"] .mejs-captions-selector .track-tip-container { right: 6px }
+[dir="rtl"] .mejs-captions-selector .track-tip-container { left: 6px }
+
+
+/* style menu items without a radio button */
+.mejs-button [role="menu"] {
+  padding: 0 !important;
+}
+ /* compensate for above 0 padding */
+ .mejs-button [role="menu"] ul li {
+  position: relative;
+  padding: 0 10px !important;
+}
+/* add a hover effect */
+.mejs-button [role="menu"] ul li:hover {
+  background-color: #c8c8c8 !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.mejs-button [role="menu"] ul li input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.mejs-button [role="menu"] ul li input[type="radio"]:not(:checked)+span {
+  display: none;
+}
+
+.mejs-button [role="menu"] ul li input[type="radio"]:checked+span {
+  display: inline;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+}
+
+.mejs-button [role="menu"] ul li label {
+  cursor: pointer;
+}
+[dir="ltr"] .mejs-button [role="menu"] ul li label { margin-left: 5px }
+[dir="rtl"] .mejs-button [role="menu"] ul li label { margin-right: 5px }
+
+
+.mejs-button [role="menu"] label.mejs-selected {
+  color: #21f8f8 !important;
+}
+
+/* stylelint-enable property-disallowed-list, declaration-property-value-disallowed-list */
+</style><script src="./5. Exploring Python_ CSS 2024_files/loader.jsp" async="" type="text/javascript"></script><script type="text/javascript" src="./5. Exploring Python_ CSS 2024_files/loader.js"></script><script type="text/javascript" src="./5. Exploring Python_ CSS 2024_files/jQueryPrivate.js" async=""></script><link type="text/css" href="./5. Exploring Python_ CSS 2024_files/proactiveresources-base.min.css" rel="stylesheet"><link type="text/css" href="./5. Exploring Python_ CSS 2024_files/style.css" rel="stylesheet"><link type="text/css" href="./5. Exploring Python_ CSS 2024_files/support-center.min.css" rel="stylesheet"><link type="text/css" href="./5. Exploring Python_ CSS 2024_files/override-proactive.css" rel="stylesheet"><link type="text/css" href="./5. Exploring Python_ CSS 2024_files/support-center-theme-defaults.min.css" rel="stylesheet"><link type="text/css" href="./5. Exploring Python_ CSS 2024_files/support-center-theme-canvas.min.css" rel="stylesheet"><script type="module" src="./5. Exploring Python_ CSS 2024_files/impact.js" async=""></script><style data-styled="active" data-styled-version="6.1.8"></style><link type="text/css" href="./5. Exploring Python_ CSS 2024_files/support-tab-custom.min.css" rel="stylesheet"></head>
+<body class="with-left-side course-menu-expanded padless-content pages primary-nav-expanded full-width context-course_7413444 responsive_student_grades_page webkit chrome no-touch show" style="--eesy-tab-custom-primary-color: #ffffff; --eesy-tab-custom-background-color: #006699; --eesy-tab-custom-position-left: 30px; --eesy-tab-custom-position-right: 30px; --eesy-tab-custom-position-bottom: 50px; --eesy-tab-custom-position-top: 120px; --eesy-tab-custom-border-radius: 0px 0px 0px 0px; --eesy-tab-custom-scale: 0.65;"><div></div>
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1> To access this site, you must enable JavaScript.</h1>
+  </div>
+</noscript>
+
+
+
+
+<div id="flash_message_holder"></div>
+<div id="flash_screenreader_holder" role="alert" aria-live="assertive" aria-relevant="additions" class="screenreader-only" aria-atomic="true"></div>
+
+<div id="application" class="ic-app">
+  
+
+
+
+<header id="mobile-header" class="no-print">
+  <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-hamburger">
+    <i class="icon-solid icon-hamburger"></i>
+    <span id="mobileHeaderInboxUnreadBadge" class="menu-item__badge" style="min-width: 0; top: 12px; height: 12px; right: 6px; display:none;"></span>
+    <span class="screenreader-only">Dashboard</span>
+  </button>
+  <div class="mobile-header-space"></div>
+    <a class="mobile-header-title expandable" href="https://canvas.instructure.com/courses/7413444" role="button" aria-controls="mobileContextNavContainer">
+      <div>CSS4</div>
+        <div>5. Exploring Python</div>
+    </a>
+    <div class="mobile-header-space"></div>
+    <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-arrow" aria-label="Navigation menu">
+      <i class="icon-arrow-open-down" id="mobileHeaderArrowIcon"></i>
+    </button>
+</header>
+<nav id="mobileContextNavContainer" aria-expanded="false"></nav>
+
+<header id="header" class="ic-app-header no-print ">
+  <a href="https://canvas.instructure.com/courses/7413444/pages/5-exploring-python?module_item_id=100843576#content" id="skip_navigation_link">Skip to content</a>
+  <div role="region" class="ic-app-header__main-navigation" aria-label="Global navigation">
+    <ul id="menu" class="ic-app-header__menu-list">
+        <li class="menu-item ic-app-header__menu-list-item ">
+          <a id="global_nav_profile_link" role="button" href="https://canvas.instructure.com/profile/settings" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container">
+              <div aria-hidden="true" class="fs-exclude ic-avatar ">
+                <img src="./5. Exploring Python_ CSS 2024_files/avatar-50.png" alt="Winston Muthaphuli">
+              </div>
+              <span class="menu-item__badge"></span>
+            </div>
+            <div class="menu-item__text">
+              Account
+            </div>
+          </a>
+        </li>
+      <li class="ic-app-header__menu-list-item ">
+        <a id="global_nav_dashboard_link" href="https://canvas.instructure.com/" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z"></path></svg>
+
+          </div>
+          <div class="menu-item__text">
+            Dashboard
+          </div>
+        </a>
+      </li>
+        <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active" aria-current="page">
+          <a id="global_nav_courses_link" role="button" href="https://canvas.instructure.com/courses" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"></path></svg>
+
+            </div>
+            <div class="menu-item__text">
+              Courses
+            </div>
+          </a>
+        </li>
+      <li class="menu-item ic-app-header__menu-list-item ">
+        <a id="global_nav_calendar_link" href="https://canvas.instructure.com/calendar" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"></path></svg>
+
+          </div>
+          <div class="menu-item__text">
+            Calendar
+          </div>
+        </a>
+      </li>
+      <li class="menu-item ic-app-header__menu-list-item ">
+      <!-- TODO: Add back global search when available -->
+        <a id="global_nav_conversations_link" href="https://canvas.instructure.com/conversations" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container">
+            <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"></path></svg>
+</span>
+            <span class="menu-item__badge"></span>
+          </div>
+          <div class="menu-item__text">
+            Inbox
+          </div>
+        </a>
+      </li>
+        <li class="menu-item ic-app-header__menu-list-item">
+          <a id="global_nav_history_link" role="button" href="https://canvas.instructure.com/courses/7413444/pages/5-exploring-python?module_item_id=100843576#" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg viewBox="0 0 1920 1920" class="ic-icon-svg menu-item__icon svg-icon-history" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M960 112.941c-467.125 0-847.059 379.934-847.059 847.059 0 467.125 379.934 847.059 847.059 847.059 467.125 0 847.059-379.934 847.059-847.059 0-467.125-379.934-847.059-847.059-847.059M960 1920C430.645 1920 0 1489.355 0 960S430.645 0 960 0s960 430.645 960 960-430.645 960-960 960m417.905-575.955L903.552 988.28V395.34h112.941v536.47l429.177 321.77-67.765 90.465z" stroke="none" stroke-width="1" fill-rule="evenodd"></path>
+</svg>
+            </div>
+            <div class="menu-item__text">
+              History
+            </div>
+          </a>
+        </li>
+        
+
+      <li class="ic-app-header__menu-list-item">
+        <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+          <div class="menu-item-icon-container" role="presentation">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="ic-icon-svg menu-item__icon svg-icon-information" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M94.42,139h11.15V105.58H94.42ZM83.27,150.19V94.42h33.46v55.76ZM100,72.12A11.15,11.15,0,1,1,111.15,61,11.16,11.16,0,0,1,100,72.12Zm0-33.46A22.31,22.31,0,1,0,122.31,61,22.33,22.33,0,0,0,100,38.66M100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65"></path></svg>
+
+            <span class="menu-item__badge"></span>
+          </div>
+          <div class="menu-item__text">
+            Help
+          </div>
+</a>      </li>
+    </ul>
+  </div>
+  <div class="ic-app-header__secondary-navigation">
+    <ul class="ic-app-header__menu-list">
+      <li class="menu-item ic-app-header__menu-list-item">
+        <a id="primaryNavToggle" role="button" href="https://canvas.instructure.com/courses/7413444/pages/5-exploring-python?module_item_id=100843576#" class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle" aria-label="Minimise global navigation" title="Minimise global navigation">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"></path>
+</svg>
+
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div id="global_nav_tray_container"></div>
+  <div id="global_nav_tour"></div>
+</header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="https://canvas.instructure.com/courses/7413444/pages/5-exploring-python?module_item_id=100843576#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="./5. Exploring Python_ CSS 2024_files/saved_resource.html" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide courses navigation menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+
+        <div class="ic-app-crumbs">
+            <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="https://canvas.instructure.com/"><span class="ellipsible"><i class="icon-home" title="My dashboard">
+  <span class="screenreader-only">My dashboard</span>
+</i>
+</span></a></li><li><a href="https://canvas.instructure.com/courses/7413444"><span class="ellipsible">CSS4</span></a></li><li><a href="https://canvas.instructure.com/courses/7413444/pages"><span class="ellipsible">Pages</span></a></li><li><span class="ellipsible">5. Exploring Python</span></li></ul></nav>
+        </div>
+
+
+        <div class="right-of-crumbs">
+            <div class="TutorialToggleHolder"></div>
+        </div>
+
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side" class="ic-app-course-menu ic-sticky-on list-view" style="display: block">
+          <div id="sticky-container" class="ic-sticky-frame">
+            <nav role="navigation" aria-label="Courses navigation menu"><ul id="section-tabs"><li class="section"><a href="https://canvas.instructure.com/courses/7413444" class="home" tabindex="0">Home</a></li><li class="section"><a href="https://canvas.instructure.com/courses/7413444/grades" class="grades" tabindex="0">Grades<b class="nav-badge">5</b></a></li><li class="section"><a href="https://canvas.instructure.com/courses/7413444/modules" class="modules" tabindex="0">Modules</a></li></ul></nav>
+          </div>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+  
+
+<div id="wiki_page_show">
+
+<div class="show-content user_content clearfix enhanced">
+  
+    <h1 class="page-title">5. Exploring Python</h1>
+  
+  
+  
+    <h1>Exploring Python</h1>
+
+<h2>Jupyter Notebook</h2>
+
+<p>Up till now we have been using the Spyder IDE or the Python coding environment. I hope you have become familiar with it. Now there are many others out there built for different purposes. Like PyCharm and VS Code, and many many more. However, if you are learning Python and applying it to some data science application, then you have to know about Jupyter Notebooks. </p>
+
+<p>A Jupyter Notebook is an interactive web applications that facilitate creating and sharing documents that contain live code, equations, visualizations, and narrative text. They are widely used in data science, scientific research, and education.</p>
+
+<p>Many teachers use it to present content, as you will see in week 2. Many tutorials on line use Jupyter Notebooks to convey ideas and principles. So it is quite important to understand how to use it, if you want to follow a tutorial or lesson. </p>
+
+<p>There is a newer version of Jupyter Notebook called Jupyter Lab, but essentialy the same thing. The latter just have more features.</p>
+
+<h3>Getting Started</h3>
+
+<p>So the call thing about the Anaconda workspace you installed is that it has Jupyter Notebook installed already for you. So if go to you windows app, and type "Jupyter", you should see:</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/41143f23-2e3c-42c7-9749-00baa74e2f51" alt="image"></p>
+
+<p>Click on that and you should see a windows terminal pop up and a browser window:</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/41b75678-384d-40f8-a49f-1d3492d891e6" alt="image"></p>
+
+<p>Go to the "New" tab and click on "Python 3 (ipykernal")</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/1a0d0608-54b4-4bf1-a92b-06479e6a1cb1" alt="image"></p>
+
+<p>You should then see the following:</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/d6f57945-a452-4a34-97a5-1ada1ce26fa9" alt="image"></p>
+
+<p>So what is the difference between Jupyter Notebook and a Python script file. </p>
+
+<p>Well it is more interactive, it is like a combination of a Python script and the console. You can also write in two modes, the is code the other is like a word document. This helps to explain what your doing throughout the document.</p>
+
+<p>Let us see a few examples in action.</p>
+
+<p>Let us go back to the one of our first lessons when we were using the country_data.csv file. We first learnt to input this data into lists. Let us do the same in a Jupyter Notebook. Enter the following list and click on "Run":</p>
+
+<pre><code style="font-size: 20px;">age = [30,40,30,49,22,35,22,46,29,25,39]
+</code></pre>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/78a26b20-73cf-4156-92c9-9a315389890e" alt="image"></p>
+
+<p>Now to print the data of "age" to the screen we can just input "age" and click on "Run":</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/bef151c4-5232-4980-9169-baafc96234c3" alt="image"></p>
+
+<p>Similar to what we get in a Python console. However, now you can remove or add a cell, like you do in a script. Note you can also use the <code style="font-size: 20px;">print()</code> function to display it but it is not necessary.</p>
+
+<p>Instead of press run you can press "Shift" + "F5" to run a cell.</p>
+
+<p>Now you will notice there is drop-down that says code, if you click on you will see a few text options:</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/41d27805-49d5-4ea1-8a59-1965a7205741" alt="image"></p>
+
+<p>Now I added some text, not code, and then an image at the end:</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/93a44532-9eba-462c-a5cc-567292da3a9c" alt="image"></p>
+
+<p>This is what makes Jupyter Notebook really usefull for teaching as you can easily add non-code items to you Jupyter Notebook, and essentially tell a story of your code.</p>
+
+<h3>Pandas</h3>
+
+<p>Let us try read in some data.</p>
+
+<p>Let us first upload the file, do that by going to File-&gt;Open:</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/8b78cef7-e037-4502-883d-0d0753a3613d" alt="image"></p>
+
+<p>Then click on the "Upload" button and the select the "country_data.csv":</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/776fbaa2-901c-458c-b851-b7b72bd54ae4" alt="image"></p>
+
+<p>Go back to your Jupyter Notebook and input the following code:</p>
+
+<pre><code style="font-size: 20px;">import pandas as pd
+
+df = pd.read_csv("country_data.csv")
+
+df
+</code></pre>
+
+<p>When you click on "Run", you get the following:</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/548031e9-3cc5-4b3b-b764-ba951dc83e25" alt="image"></p>
+
+<p>Which is quite a nice representation.</p>
+
+<h3>Visualization</h3>
+
+<p>Now we are going to look at plotting some graphs.</p>
+
+<p><img src="./5. Exploring Python_ CSS 2024_files/c44058a9-b289-402e-98cf-b8db81942de1" alt="image"></p>
+
+<h2>Numerical Calculations - stdev &amp; R^2</h2>
+
+<h3>Stdev</h3>
+
+<p>One of the outputs we showed was the standard deviation of the age list from the excel data set. Now we can do this in Python too quite easily with a built-in function but for the purposes of learning we are going to do a manual approach since we learnt all the tools needed now to do it. To work out the population standard deviation we need to do the following:</p>
+
+<ol>
+<li>Calculate the mean (average) of each data set.</li>
+<li>Subtract the deviance of each piece of data by subtracting the mean from each number.</li>
+<li>Square each deviation.</li>
+<li>Add all the squared deviations.</li>
+<li>Divide the value obtained in step four by the number of items in the data set.</li>
+<li>Calculate the square root of the value obtained in step five.</li>
+</ol>
+
+<p>We have partially done this before. Let us complete the entire process:</p>
+
+<p>Step 1. Given the age list we first need to find the mean of the list:</p>
+
+<pre><code style="font-size: 20px;">age=[39, 25, 29, 46, 22, 35, 22, 49, 30, 40, 30]
+
+mean = sum(age)/len(age)
+
+print(mean)
+</code></pre>
+
+<p>Step 2. Now we need to subtract the mean from value in the list and square the result:</p>
+
+<p>We are first going to create an empty list that will store the squared differences called sq<em>diff</em>list and then we are going to create a for loop to run through each value in the age list, subtract the mean, square the result and store in the sq<em>diff</em>list variable:</p>
+
+<pre><code style="font-size: 20px;"># Create empty list
+sq_diff_list = []
+
+# Setup for loop
+for i in range(len(age)):
+
+    # Take average from each value in age list and square outcome. Note we square use double asterisks
+    # sq_diff we are just using as a temporary variable to store the result
+    sq_diff = (age[i] - mean)**2
+
+    # add the results to the `sq_diff_list` list 
+    sq_diff_list.append(sq_diff)
+
+    # print the result
+    print(sq_diff)
+</code></pre>
+
+<p>Now we need to work out the mean of the sq<em>diff</em>list and square the result:</p>
+
+<pre><code style="font-size: 20px;">mean_sq_diff = sum(sq_diff_list)/len(sq_diff_list)
+print(mean_sq_diff**0.5)
+</code></pre>
+
+<p>This process was quite tedious and in practice you would not do this as there is a built-in Python function to do it as shown below:</p>
+
+<pre><code style="font-size: 20px;">import numpy
+age=[39, 25, 29, 46, 22, 35, 22, 49, 30, 40, 30]
+print(numpy.std(age))
+</code></pre>
+
+<h3>R^2</h3>
+
+<p>Unfortunately, R-squared calculation is not implemented in numpy… so we will be doing it by hand using the following code:</p>
+
+<pre><code style="font-size: 20px;">import numpy as np
+hours = [29, 9, 10, 38, 16, 26, 50, 10, 30, 33, 43, 2, 39, 15, 44, 29, 41, 15, 24, 50]
+results = [65, 7, 8, 76, 23, 56, 100, 3, 74, 48, 73, 0, 62, 37, 74, 40, 90, 42, 58, 100]
+x = np.asarray(hours)
+y = np.asarray(results)
+sum_x = np.sum(x)
+sum_x_2 = np.sum(np.square(x))
+sum_y = np.sum(y)
+sum_y_2 = np.sum(np.square(y))
+sum_xy = np.sum(x*y)
+print(f"sum_x = {sum_x}")
+print(f"sum_x_2 = {sum_x_2}")
+print(f"sum_y = {sum_y}")
+print(f"sum_y_2 = {sum_y_2}")
+print(f"sum_xy = {sum_xy}")
+n = len(x)
+print(f"n = {n}")
+top = n*sum_xy - sum_x*sum_y
+print(f"top = {top}")
+bot_a = np.sqrt(n*sum_x_2 - np.square(sum_x))
+bot_b = np.sqrt(n*sum_y_2 - np.square(sum_y))
+bot = bot_a*bot_b
+print(f"bot = {bot}")
+R_2 = np.square(top/bot)
+print(f"R_2 = {R_2}")
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code style="font-size: 20px;">sum_x = 553
+sum_x_2 = 19345
+sum_y = 1036
+sum_y_2 = 72414
+sum_xy = 36814
+n = 20
+top = 163372
+bot = 174378.40331875964
+R_2 = 0.8777480188408425
+</code></pre>
+
+<p>Practically, we should just use a Python library called sklearn that can do this for us but doing the manual approach allows us to learn more about Python. </p>
+
+<pre><code style="font-size: 20px;">import numpy as np
+from sklearn.metrics import r2_score
+import matplotlib.pyplot as plt
+
+# Data
+hours = [29, 9, 10, 38, 16, 26, 50, 10, 30, 33, 43, 2, 39, 15, 44, 29, 41, 15, 24, 50]
+results = [65, 7, 8, 76, 23, 56, 100, 3, 74, 48, 73, 0, 62, 37, 74, 40, 90, 42, 58, 100]
+
+# Fit a linear regression model
+model = np.polyfit(hours, results, 1)
+predict = np.poly1d(model)
+
+# Calculate R-squared
+r2 = r2_score(results, predict(hours))
+print("R-squared:", r2)
+
+# Scatter plot
+plt.scatter(hours, results, label='Actual data')
+
+# Regression line plot
+plt.plot(hours, predict(hours), color='red', label='Regression line')
+
+# Labels and title
+plt.xlabel('Hours')
+plt.ylabel('Results')
+plt.title('Scatter Plot with Regression Line')
+
+# Show legend
+plt.legend()
+
+# Display the plot
+plt.show()
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code style="font-size: 20px;">0.8777480188408424
+</code></pre>
+
+<h3>Some issues with Jupyter Notebook</h3>
+
+<p>While Jupyter Notebooks are a popular and powerful tool for data analysis, scientific computing, and interactive programming in Python, there are some downsides and reasons why they might not be recommended for beginners, especially when just starting to learn Python:</p>
+
+<p>In Jupyter Notebooks, code can be executed out of order, leading to confusion for beginners. The order in which cells are executed matters, and this can make it challenging to understand the flow of the program. Some other issues are variables and their values persist across cells, which can make it difficult to track the state of the program.</p>
+
+<h2>Automation</h2>
+
+<h3>Python</h3>
+
+<p>Let us say we have 10 csv files with 2 columns each, x and y. We want to add up all the values in column y and store it in a list. Let us write a python script to do it first then in bash.</p>
+
+<p>Download and extract the <code style="font-size: 20px;">csv_files.zip</code> folder and put it in your project directory.</p>
+
+<pre><code style="font-size: 20px;">import pandas as pd
+import os
+
+# List to store the sum of 'y' column values for each file
+sum_list = []
+
+# Directory containing CSV files
+directory = './csv_files/'
+
+# Loop through each CSV file in the directory
+for filename in os.listdir(directory):
+    print(f"Processing...Filename = {filename}")
+    if filename.endswith('.csv'):
+        file_path = os.path.join(directory, filename)
+
+
+        # Read the CSV file using pandas
+        df = pd.read_csv(file_path)
+
+        # Calculate the sum of 'y' column and append to the list
+        total_sum = df['y'].sum()
+        sum_list.append(total_sum)
+
+# Print the list of sums
+print("Sum of 'y' column values for each file:", sum_list)
+
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code style="font-size: 20px;">Processing...Filename = file_1.csv
+Processing...Filename = file_10.csv
+Processing...Filename = file_2.csv
+Processing...Filename = file_3.csv
+Processing...Filename = file_4.csv
+Processing...Filename = file_5.csv
+Processing...Filename = file_6.csv
+Processing...Filename = file_7.csv
+Processing...Filename = file_8.csv
+Processing...Filename = file_9.csv
+Processing...Filename = read_csv.sh
+Sum of 'y' column values for each file: [4945, 5029, 5400, 4753, 5248, 4860, 5084, 49
+79, 5581, 5217]
+</code></pre>
+
+<h3>Bash</h3>
+
+<p>Doing the same with a bash script:</p>
+
+<pre><code style="font-size: 20px;">#!/bin/bash
+
+# Directory containing CSV files
+directory='csv_files/'
+#directory='/c/Users/BBarsch.CSIR/css2024_day03/csv_files'
+
+# List to store the sum of 'y' column values for each file
+sum_list=()
+
+# Loop through each CSV file in the directory
+for filename in "$directory"/*.csv; do
+    if [ -f "$filename" ]; then
+        # Use awk to sum the 'y' column values
+        echo $filename
+        total_sum=$(awk -F',' 'NR &gt; 1 {sum += $2} END {print sum}' "$filename")
+
+        # Append the sum to the list
+        sum_list+=("$total_sum")
+    fi
+done
+
+# Print the list of sums
+echo "Sum of 'y' column values for each file: ${sum_list[@]}"
+
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code style="font-size: 20px;">csv_files//file_1.csv
+csv_files//file_10.csv
+csv_files//file_2.csv
+csv_files//file_3.csv
+csv_files//file_4.csv
+csv_files//file_5.csv
+csv_files//file_6.csv
+csv_files//file_7.csv
+csv_files//file_8.csv
+csv_files//file_9.csv
+Sum of 'y' column values for each file: 4945 5029 5400 4753 5248 4860 5084 4979 5581 5217
+
+</code></pre>
+
+<h3>Bash with Python</h3>
+
+<p>Any time you get access to a web server your access will most likey be in some format of terminal - most likely a Bash terminal. While Bash is quite useful and you can do many things with it, it is quite limited to the functionality of Python and what Pandas can do. Many times you would manage your files with Bash but run a Python script to do the processing of it. </p>
+
+<p>The script below combines the two codes we did before.</p>
+
+<pre><code style="font-size: 20px;">#!/bin/bash
+
+# This is a comment so the terminal will ignore this line
+# ... you can write anything here
+
+echo "Process files"
+
+winpty python read_csv_files.py
+</code></pre>
+
+<p>Output:</p>
+
+<pre><code style="font-size: 20px;">$ ./run_python.sh
+Process files
+Processing...Filename = file_1.csv
+Processing...Filename = file_10.csv
+Processing...Filename = file_2.csv
+Processing...Filename = file_3.csv
+Processing...Filename = file_4.csv
+Processing...Filename = file_5.csv
+Processing...Filename = file_6.csv
+Processing...Filename = file_7.csv
+Processing...Filename = file_8.csv
+Processing...Filename = file_9.csv
+Sum of 'y' column values for each file: [4945, 5029, 5400, 4753, 5248, 4860, 5084, 4979, 5581, 5217]
+
+</code></pre>
+
+<p>This is a very simple calculation, imagine you had a lot more data and more complete problems to solve...if so then a supercomputer is the way to go! Remember all the code we have learnt up to now is sequential. Things are done one after the other. If we distribute that work load it can be done quicker.</p>
+
+<h2>Pandas Profiling:</h2>
+
+<p>Open Anaconda Prompt and input the following:</p>
+
+<ol>
+<li><code style="font-size: 20px;">conda create --name eda</code></li>
+<li><code style="font-size: 20px;">conda activate eda</code></li>
+<li><code style="font-size: 20px;">conda install conda-forge::ydata-profiling</code></li>
+<li><code style="font-size: 20px;">jupyter notebook</code></li>
+</ol>
+
+<p>Code:</p>
+
+<pre><code style="font-size: 20px;">import numpy as np
+import pandas as pd
+from ydata_profiling import ProfileReport
+
+df = pd.DataFrame(np.random.rand(100, 5), columns=["a", "b", "c", "d", "e"])
+
+profile = ProfileReport(df, title="Pandas Profiling Report")
+
+profile
+
+</code></pre>
+
+<h2>Resources</h2>
+
+<p>Github Desktop</p>
+
+<p>https://survey.stackoverflow.co/2023/#technology</p>
+
+<p>https://automatetheboringstuff.com/</p>
+
+<p>https://www.offerzen.com/reports/software-developer-south-africa</p>
+
+<p>https://streamlit.io/</p>
+
+<p>https://pypi.org/project/pygwalker/</p>
+
+<p>https://openrefine.org/</p>
+
+<p>https://www.kaggle.com/</p>
+
+<p>"Kaggle is an online community platform for data scientists and machine learning enthusiasts. Kaggle allows users to collaborate with other users, find and publish datasets, use GPU integrated notebooks, and compete with other data scientists to solve data science challenges."</p>
+
+<p>https://www.datacamp.com/courses/intro-to-python-for-data-science</p>
+
+<h2>CHPC Winter School</h2>
+
+<p>https://events.chpc.ac.za/event/123/</p>
+
+  
+</div>
+</div>
+<div id="module_navigation_target"><div style=""><div class="module-sequence-padding"></div>
+<div class="module-sequence-footer" role="navigation" aria-label="Module Navigation">
+  <div class="module-sequence-footer-content">
+    
+      <span class="module-sequence-footer-button--previous" data-tooltip="right" data-html-tooltip-title="&lt;i class=&#39;icon-quiz&#39;&gt;&lt;/i&gt; Linux Quiz 4 - File Management">
+          <a href="https://canvas.instructure.com/courses/7413444/modules/items/101457243" class="Button" aria-describedby="msf0-previous-desc" aria-label="Previous Module Item">
+            <i class="icon-mini-arrow-left"></i>Previous
+            <span id="msf0-previous-desc" class="hidden" hidden="">Previous: Linux Quiz 4 - File Management</span>
+          </a>
+      </span>
+    
+
+    
+      <span class="module-sequence-footer-button--next" data-tooltip="left" data-html-tooltip-title="&lt;i class=&#39;icon-paperclip&#39;&gt;&lt;/i&gt; Numerica_Calculations.ipynb">
+        <a href="https://canvas.instructure.com/courses/7413444/modules/items/101531558" class="Button" aria-describedby="msf0-next-desc" aria-label="Next Module Item">
+          Next<i class="icon-mini-arrow-right"></i>
+          <span id="msf0-next-desc" class="hidden" hidden="">Next: Numerica_Calculations.ipynb</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+</div></div>
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">3ff8827b-e4d4-4f9c-994d-f08af35ea9a3</div>
+        <a id="equella_endpoint_url" href="http://oer.equella.com/signon.do">&nbsp;</a>
+        <a id="equella_callback_url" href="https://canvas.instructure.com/external_content/success/equella">&nbsp;</a>
+        <a id="equella_cancel_url" href="https://canvas.instructure.com/external_content/cancel/equella">&nbsp;</a>
+        <a id="equella_action" href="https://canvas.instructure.com/courses/7413444/pages/selectOrAdd">&nbsp;</a>
+          <div id="equella_teaser">Equella is a shared content repository that organizations can use to easily track and reuse content.  This OER repository is a collection of free resources provided by Equella.</div>
+    </div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  <div id="StudentTray__Container"></div>
+    <div class="NewUserTutorialTray__Container"></div>
+  <div id="react-router-portals"></div>
+  
+
+  <iframe src="./5. Exploring Python_ CSS 2024_files/post_message_forwarding.html" name="post_message_forwarding" title="post_message_forwarding" id="post_message_forwarding" sandbox="allow-scripts allow-same-origin" style="display:none;"></iframe>
+
+
+  <script>
+    Object.assign(
+      ENV,
+      {}
+    )
+  </script>
+
+<script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('inst_fs_service_worker');
+//]]>
+</script>
+  <script src="./5. Exploring Python_ CSS 2024_files/es_plugin_fft.js" defer="defer"></script>
+
+</div> <!-- #application -->
+
+
+<iframe id="FullStory-iframe" class="fs-hide" style="display: none;" src="./5. Exploring Python_ CSS 2024_files/saved_resource(1).html"></iframe><div class="tinymce-a11y-checker-container"></div><div id="nav-tray-portal" style="position: relative; z-index: 99;"></div><div id="impact-sr-alert" class="impact-sr-only" aria-live="polite"></div><div class="eesy eesy-tab-custom-container eesy-tab-display-type-sidebar eesy-tab-alignment-right eesy-tab-position-center eesy-tab-behaviour-draggable" style="position: fixed">
+            <div id="eesy-tab-custom-inner" data-eesy-role="support-center-button" class="eesy-tab-custom eesy-tab-custom-btn eesy-tab-corners-type-round-top eesy-tab-expandable">
+                <div class="eesy-tab-custom-btn-content" aria-label="Support" role="button" tabindex="0">
+                        <div class="eesy-tab-custom-btn-icon eesy-tab-icon-position-right ">
+                                <i aria-hidden="true" class="fa fa-question-circle"></i>
+                        </div>
+                        <div class="eesy-tab-custom-btn-text">Support</div>
+                </div>
+                    <div aria-label="Change Support Center position by pressing up and down arrows" class="eesy-tab-custom-btn-drag-handlers" id="eesy-tab-custom-drag-handlers">
+                        <i class="fa fa-chevron-left eesy-tab-custom-btn-handle-left" tabindex="0"></i>
+                        <i class="fa fa-chevron-right eesy-tab-custom-btn-handle-right" tabindex="0"></i>
+                    </div>
+            </div>
+        </div></body></html>

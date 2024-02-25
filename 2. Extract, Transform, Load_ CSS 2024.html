@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)https://canvas.instructure.com/courses/7413444/pages/2-extract-transform-load?module_item_id=100843346 -->
+<html dir="ltr" lang="en-GB" style="--impact-supportCenterButton-zIndex-base: 9990; --impact-expertTools-zIndex-base: 9990;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="https://pp-beta.instructure.com/push/client.js?_=1708077702984"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#394B58">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="https://canvas.instructure.com/web-app-manifest/manifest.json">
+  <meta name="sentry-trace" content="0788267c48524f218fa6e705cb9658f7-8e1e81a24b444b8c-0">
+  <title>2. Extract, Transform, Load: CSS 2024</title>
+
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./2. Extract, Transform, Load_ CSS 2024_files/fonts-6ee09b0b2f.css" media="screen">
+  <link rel="stylesheet" href="./2. Extract, Transform, Load_ CSS 2024_files/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css" media="all">
+  <link rel="stylesheet" href="./2. Extract, Transform, Load_ CSS 2024_files/common-e9786ec35c.css" media="all">
+  <link rel="stylesheet" href="./2. Extract, Transform, Load_ CSS 2024_files/wiki_page-bb0c0c1f96.css" media="screen">
+  <link rel="stylesheet" href="./2. Extract, Transform, Load_ CSS 2024_files/new_user_tutorials-2950c871dd.css" media="screen">
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png">
+  <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+
+  
+  
+  <script src="./2. Extract, Transform, Load_ CSS 2024_files/launch.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="./2. Extract, Transform, Load_ CSS 2024_files/heap-3001039959.js"></script><script async="" crossorigin="anonymous" src="./2. Extract, Transform, Load_ CSS 2024_files/fs.js"></script><script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+    INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"iad.rtmp.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"equellaEnabled":true,"logPageViews":true,"editorButtons":[{"name":"Commons Favourites","id":69910,"favorite":false,"url":"https://lor.instructure.com/api/lti/favorite-resources","icon_url":"https://lor.instructure.com/img/icon_commons.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":true,"description":"\u003cp\u003eFind and share course content\u003c/p\u003e\n"},{"name":"Microsoft Teams Meetings","id":361860,"favorite":false,"url":"https://msteams-lti-iad-prod.inscloudgate.net/resource_link_request","icon_url":"https://msteams-lti-iad-prod.inscloudgate.net/images/placement_icon.png","canvas_icon_class":null,"width":575,"height":700,"use_tray":false,"description":"\u003cp\u003eMicrosoft Teams Meetings integration for Canvas LMS\u003c/p\u003e\n"},{"name":"Code Highlight","id":688398,"favorite":false,"url":"https://lti.wyelearning.com/launch/code-highlight","icon_url":"https://code-highlight.wyelearning.com/icon.svg","canvas_icon_class":null,"width":800,"height":520,"use_tray":false,"description":"\u003cp\u003eEasily insert syntax highlighted code into the Canvas RCE\u003c/p\u003e\n"},{"name":"Markdown","id":688399,"favorite":false,"url":"https://lti.wyelearning.com/launch/markdown","icon_url":"https://markdown.wyelearning.com/icon.svg","canvas_icon_class":null,"width":800,"height":520,"use_tray":false,"description":"\u003cp\u003eAuthor markdown in the editor.\u003c/p\u003e\n"},{"name":"Code Highlight","id":688400,"favorite":false,"url":"https://lti.wyelearning.com/launch/code-highlight","icon_url":"https://code-highlight.wyelearning.com/icon.svg","canvas_icon_class":null,"width":800,"height":520,"use_tray":false,"description":"\u003cp\u003eEasily insert syntax highlighted code into the Canvas RCE\u003c/p\u003e\n"}],"pandaPubSettings":{"push_url":"https://pp-beta.instructure.com/push","application_id":"o9lhB0KU5xBx3SIiP8et"}};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.json","active_brand_config":null,"confetti_branding_enabled":false,"url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-fa0672d544.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-fa0672d544.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css"],"current_user_id":"110848077","current_user_global_id":"70000110848077","current_user_heap_id":"uu-2-79dbd540922f1c722f9e76e43f9e78f151356d37152171c649d8c114bc764ec9-ff2e5780-fa5b-012d-f7b3-123135003972","current_user_roles":["user","student"],"current_user_is_student":true,"current_user_types":[],"current_user_disabled_inbox":false,"current_user_visited_tabs":null,"discussions_reporting":false,"files_domain":"cluster7.canvas-user-content.com","group_information":null,"DOMAIN_ROOT_ACCOUNT_ID":"70000000000010","DOMAIN_ROOT_ACCOUNT_UUID":"ff2e5780-fa5b-012d-f7b3-123135003972","k12":false,"help_link_name":"Help","help_link_icon":"information","use_high_contrast":true,"auto_show_cc":false,"disable_celebrations":false,"disable_keyboard_shortcuts":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *","clipboard-write *","display-capture *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://canvas.instructure.com","comment_library_suggestions_enabled":false,"SETTINGS":{"open_registration":true,"collapse_global_nav":false,"release_notes_badge_disabled":false},"FULL_STORY_ENABLED":false,"RAILS_ENVIRONMENT":"Production","IN_PACED_COURSE":false,"SENTRY_FRONTEND":{"dsn":"https://355a1d96717e4038ac25aa852fa79a8f@relay-iad.sentry.insops.net/388","org_slug":"instructure","base_url":"https://sentry.insops.net","normalized_route":"/courses/{course_id}/pages/{id}","errors_sample_rate":"0.0005","traces_sample_rate":"0.0005","url_deny_pattern":"instructure-uploads.*amazonaws.com","revision":"canvas-lms@20240214.325"},"DATA_COLLECTION_ENDPOINT":"https://canvas-frontend-data-iad-prod.inscloudgate.net/submit","DOMAIN_ROOT_ACCOUNT_SFID":"001A000001FllZmIAJ","DIRECT_SHARE_ENABLED":false,"CAN_VIEW_CONTENT_SHARES":false,"FEATURES":{"featured_help_links":true,"account_level_blackout_dates":false,"deleted_user_tools":false,"render_both_to_do_lists":false,"course_paces_redesign":true,"course_paces_for_students":true,"explicit_latex_typesetting":false,"media_links_use_attachment_id":true,"permanent_page_links":true,"differentiated_modules":false,"enhanced_course_creation_account_fetching":false,"instui_for_import_page":false,"enhanced_rubrics":false,"multiselect_gradebook_filters":false,"product_tours":false,"usage_rights_discussion_topics":true,"granular_permissions_manage_users":true,"create_course_subaccount_picker":true,"lti_deep_linking_module_index_menu_modal":true,"lti_dynamic_registration":false,"lti_multiple_assignment_deep_linking":true,"lti_overwrite_user_url_input_select_content_dialog":true,"lti_unique_tool_form_ids":true,"buttons_and_icons_root_account":false,"extended_submission_state":false,"scheduled_page_publication":true,"send_usage_metrics":true,"rce_transform_loaded_content":false,"lti_assignment_page_line_items":true,"mobile_offline_mode":false,"react_discussions_post":false,"instui_nav":false,"enhanced_developer_keys_tables":false,"embedded_release_notes":true,"canvas_k6_theme":false,"new_math_equation_handling":true},"current_user":{"id":"110848077","anonymous_id":"1tzux9","display_name":"Winston Muthaphuli","avatar_image_url":"https://canvas.instructure.com/images/messages/avatar-50.png","html_url":"https://canvas.instructure.com/about/110848077","pronouns":null,"avatar_is_fallback":true},"current_user_is_admin":false,"page_view_update_url":"/page_views/6c0bae24-e6a4-4f9f-b649-df1631a47077?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNmMwYmFlMjQtZTZhNC00ZjlmLWI2NDktZGYxNjMxYTQ3MDc3IiwidSI6NzAwMDAxMTA4NDgwNzcsImMiOiIyMDI0LTAyLTE2VDEwOjAxOjQxLjc3WiJ9.76nAYTwXYjyRqS-K5V_uxhZA8my1Nj8NcHpTgHmUqS8","context_asset_string":"course_7413444","ping_url":"https://canvas.instructure.com/api/v1/courses/7413444/ping","TIMEZONE":"Africa/Harare","CONTEXT_TIMEZONE":"Africa/Johannesburg","LOCALES":["en-GB","en"],"BIGEASY_LOCALE":"en_GB","FULLCALENDAR_LOCALE":"en-gb","MOMENT_LOCALE":"en-gb","rce_auto_save_max_age_ms":86400000,"K5_USER":false,"USE_CLASSIC_FONT":false,"K5_HOMEROOM_COURSE":false,"K5_SUBJECT_COURSE":false,"LOCALE_TRANSLATION_FILE":"/dist/javascripts/translations/en-GB-70ae7d497f.json","ACCOUNT_ID":"81259","user_cache_key":"MDRWVWMzQW81ZndxbkJVQWNSOEZrSmlkMThuTVlQenNlcUJQY1ZRdHZ5Zlc9\nO1twLTA/OntQXz1IVXBncmFxZTtuamFsa2hwdm9pdWxraW1tYXFld2c=\n","WIKI_PAGE_PANDAPUB":{"CHANNEL":"/private/wiki_page/70000027253251/update","TOKEN":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXlJZCI6IlBTSURXYVZkd0I4SmhNcDcyeU03IiwiY2hhbm5lbCI6Ii9vOWxoQjBLVTV4QngzU0lpUDhldC9wcml2YXRlL3dpa2lfcGFnZS83MDAwMDAyNzI1MzI1MS91cGRhdGUiLCJwdWIiOmZhbHNlLCJzdWIiOnRydWUsImV4cCI6MTcwODA4MTMwMX0.ZSNOF9VGOy0L1yFEevDXCfbEFS3OBR9NriiZiJwzBlg"},"CONFIRMED":true,"current_user_created_at":1705962013,"WIKI_RIGHTS":{"read":true},"PAGE_RIGHTS":{"read":true},"DEFAULT_EDITING_ROLES":"teachers","WIKI_PAGES_PATH":"/courses/7413444/pages","WIKI_PAGE":{"title":"2. Extract, Transform, Load","created_at":"2024-01-21T22:49:59+02:00","url":"2-extract-transform-load","editing_roles":"teachers","page_id":"27253251","last_edited_by":{"id":"27931652","anonymous_id":"gmo78","display_name":"Binjamin Barsch","avatar_image_url":"https://canvas.instructure.com/images/messages/avatar-50.png","html_url":"https://canvas.instructure.com/courses/7413444/users/27931652","pronouns":null},"published":true,"hide_from_students":false,"front_page":false,"html_url":"https://canvas.instructure.com/courses/7413444/pages/2-extract-transform-load","todo_date":null,"publish_at":null,"updated_at":"2024-01-29T21:26:21+02:00","locked_for_user":false,"body":"\u003ch1\u003eExtract\u003c/h1\u003e\n\u003cp\u003e\u003cspan\u003eFor this lesson, extract the zipped folder \"data_02.zip\" from \"Week 1: Day 2\", and place the folder in your project directory.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003ch2\u003eDifferent File Locations\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003ch3\u003eLocal files\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport pandas as pd\n\ndf = pd.read_csv(\"data_02/country_data_index.csv\")\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eFiles in a different location\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport pandas as pd\n\ndf = pd.read_csv(\"data_02/country_data_index.csv\")\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eFile from a URL\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport pandas as pd\n\ndf = pd.read_csv(\"https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis data has no header information for each columns, i.e no column names. Let us add some:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003ecolumn_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class']\n\ndf = pd.read_csv(\"https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data\",header=None, names= column_names)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eDifferent File Types\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/7fbe4893-264e-4140-8d65-81e215fb9d68\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003ehttps://pandas.pydata.org/pandas-docs/stable/user_guide/io.html\u003c/p\u003e\n\u003ch3\u003eText Files\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eText file with semi-colon\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_02/Geospatial Data.txt\",sep=\";\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eExcel\u003c/h3\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e\u003cbr\u003edf = pd.read_excel(\"data_02/residentdoctors.xlsx\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eJson\u003c/h3\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e\u003cbr\u003edf = pd.read_json(\"data_02/student_data.json\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eOther options:\u003c/h2\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cem\u003eWould you like to see the following:\u003c/em\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eWebscraping\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eConnecting to Databases\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cem\u003eUpload some of your own data files to the #chat channel in slack, we can analyze them too!\u003c/em\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch1\u003eTransform\u003c/h1\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eAs we saw in the previous lesson, sometimes the data is not in the correct format. There are many ways to clean or transform files. Sometimes this is done in the \"Extract\" process too, so there is an overlap. Here we will recap on some parameters that the the read\u003cem\u003ecsv function has: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read\u003c/em\u003ecsv.html\u003c/p\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/f8168c97-cd0e-47e5-82f9-ef8636016bce\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003eLet us look at a few files with some small issues again.\u003c/p\u003e\n\u003ch2\u003eIndex Column\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_02/country_data_index.csv\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe \"Unnamed: 0\" column often appears in pandas DataFrames when reading a CSV file if the CSV file itself has an index column that was not explicitly specified.\u003c/p\u003e\n\u003cp\u003eWhen you read a CSV file into a DataFrame using pd.read_csv(), pandas assigns an index to each row by default. If the CSV file already contains an index column, pandas will create a new index unless you specify the existing column as the index. If no index is specified, pandas will create a default numerical index, and this default index is labeled as \"Unnamed: 0\" in the DataFrame.\u003c/p\u003e\n\u003cp\u003eTo avoid the appearance of the \"Unnamed: 0\" column, you can either specify the existing index column from your CSV file when reading the data, or you can use the index_col parameter to explicitly specify which column you want to use as the index.\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_02/country_data_index.csv\",index_col=0)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis will read the CSV file and use the first column as the index, preventing the appearance of the \"Unnamed: 0\" column in your DataFrame.\u003c/p\u003e\n\u003ch2\u003eSkip Rows\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eAs we saw in the first lesson:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_01/insurance_data.csv\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWe get an error because the number of columns in your CSV file is not consistent across all rows. The read_csv function in pandas assumes a consistent number of columns, but your data seems to have two values in some rows, causing the error.\u003c/p\u003e\n\u003cp\u003eWe can resolve this by using the \"skiprows\" parameter to just skip first 5 rows:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_02/insurance_data.csv\",skiprows=5)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eColumn Headings\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_02/patient_data.csv\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNo headings :(\u003c/p\u003e\n\u003cp\u003eCreate a list with the heading names you want and add use the parameters \"header=None\" and \"names=column_names\":\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003ecolumn_names = [\"duration\", \"pulse\", \"max_pulse\", \"calories\"]\n\ndf = pd.read_csv(\"data_02/patient_data.csv\", header=None, names=column_names)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eUnique Delimiter\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eAs we saw in the first lesson:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_02/Geospatial Data.txt\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis is a text file with the data separate with a semi-colon, Pandas is expecting a comma. So we use the parameter sep=\";\"\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_02/Geospatial Data.txt\",sep=\";\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAlso note that the file name has a space in it, which is not recommended.\u003c/p\u003e\n\u003ch2\u003eInconsistent Data Types \u0026amp; Names\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_excel(\"data_02/residentdoctors.xlsx\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003eSome column headings are snake case and other all caps\u003c/li\u003e\n\u003cli\u003eAGEDIST has numbers with text\u003c/li\u003e\n\u003cli\u003eMARITULSTATUS has text fields\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eNote with Excel files, you cannot have it open in Spyder and in Excel too.\u003c/p\u003e\n\u003cp\u003eLet us first look at the different groupings:\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/aebe6e95-62ef-4ebb-bdb7-f251356d7109\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003eOne way to make this more efficient is to convert it the lower age in grouping. So instead of 30-34yrs it would be 34. This is just one way. You can keep it as is however it will prevent you from doing further numerical analysis on it.\u003c/p\u003e\n\u003cp\u003eAdd the following code:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e# Step 1: Extract the lower end of the age range (digits only)\ndf['LOWER_AGE'] = df['AGEDIST'].str.extract('(\\d+)-')\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003ePseudo-code: 1. Search for a number followed by a hyphen like \"30-\" 2. If you find that number, extract the number and ignore the hyphen 3. Put it in a new column called LOWER_AGE\u003c/p\u003e\n\u003cp\u003eThen convert that number to from s tring to integer, a whole number.\u003c/p\u003e\n\u003cp\u003eThis step uses \"str.extract()\" to capture one or more digits from the 'AGEDIST' column. When you use \u003ccode style=\"font-size: 20px;\"\u003edf['AGEDIST'].str.extract('(\\d+)-')\u003c/code\u003e, it applies this regular expression pattern to each element in the 'AGEDIST' column.\u003c/p\u003e\n\u003cp\u003eRegular expressions (regex or regexp) are sequences of characters that define a search pattern. It extracts the portion of the string that matches the pattern, which is the one or more consecutive digits before the hyphen in the age range. We won't go over regular expressions much, this was just a demonstration to show you different possibilitles.\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e# Step 2: Convert the new column to float\ndf['LOWER_AGE'] = df['LOWER_AGE'].astype(int)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003ePseudo-code: 1. Convert all the data to integers 2. Store that value back into LOWER_AGE column\u003c/p\u003e\n\u003cp\u003eAfter extracting the digits, this step converts the resulting column to floating-point numbers using astype(float). Without this conversion, the extracted values would be treated as strings, and any subsequent numeric operations or analysis would not work as expected.\u003c/p\u003e\n\u003ch4\u003ePandas Functions/Methods\u003c/h4\u003e\n\u003cp\u003eIn pandas, .str, .extract(), and .astype() are all functions or methods that can be applied to a pandas Series object or single column of text data.\u003c/p\u003e\n\u003cp\u003eThese methods are part of the powerful functionality provided by pandas for manipulating and analyzing data in a DataFrame.\u003c/p\u003e\n\u003cp\u003eWhen you apply .str to a column, it allows you to perform various string operations on each element of the Series. Here we used .extract() to extract certain information from a string. Other string methods: - .upper() makes string/text upper case - .lower() makes string/text lower case - .replace() replaces certain characters with another\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eNote, they all have brackets as they can accept parameters.\u003c/em\u003e\u003c/p\u003e\n\u003ch3\u003eWorking with Dates\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eAgain there are many ways to do things, sometimes the recommendations are useful and sometimes they are not. Working with dates and time is a tricky subject, as it all depends what you want to do with it. One general problem with dates in Excel is that formatting can be completely different from one laptop to another, you may send an Excel spreadsheet to someone else and the dates maybe completely different which may effect the analysis you did. For example:\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/f6819af8-d970-4b51-9bcb-db272166fe97\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003eIdeally you would want to work with a date format that is completely clear for yourself and the next person working with it. Let us look at this time series data:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf = pd.read_csv(\"data_02/time_series_data.csv\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eYou will notice the date is in this format: 2020-01-10, however in the US, the day is the middle number and in UK and in most local countries here the middle number is the month - as it should be :)\u003c/p\u003e\n\u003cp\u003eAnother consideration is that dates are usually interpreted as strings or text in a csv file. This can be checked with the .info() method. So the first thing you need to do is convert it to date format using Pandas.\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e# Convert the 'Date' column to datetime\ndf['Date'] = pd.to_datetime(df['Date'])\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFor example, if your date string is in the \"DD-MM-YYYY\" format, you would specify the format like this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e%d: day %m: month %Y: year\u003c/p\u003e\n\u003cp\u003eThis not only makes the date column unambiguous but also enables various date-related operations and manipulations. For example:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003efiltering by date or range\u003c/li\u003e\n\u003cli\u003ecalculating time difference\u003c/li\u003e\n\u003cli\u003eextracting year, month, day\u003c/li\u003e\n\u003cli\u003eadd shifts or lags to data\u003c/li\u003e\n\u003cli\u003erolling windows\u003c/li\u003e\n\u003cli\u003etimezones\u003c/li\u003e\n\u003cli\u003edate arithmetic\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAnother option is to split the Date column into separate columns, i.e. year, month and day. For example:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e# Split the 'Date' column into separate columns for year, month, and day\ndf['Year'] = df['Date'].dt.year\ndf['Month'] = df['Date'].dt.month\ndf['Day'] = df['Date'].dt.day\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOutput:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e        Date  Temperature  Year  Month  Day\n0 2020-01-01        27.48  2020      1    1\n1 2020-01-02        24.31  2020      1    2\n2 2020-01-03        28.24  2020      1    3\n3 2020-01-04        32.62  2020      1    4\n4 2020-01-05        23.83  2020      1    5\n5 2020-01-06        23.83  2020      1    6\n6 2020-01-07        32.90  2020      1    7\n7 2020-01-08        28.84  2020      1    8\n...\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThere may be cases when you need to do this for example:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003etime series analysis\u003c/li\u003e\n\u003cli\u003eseasonal analysis\u003c/li\u003e\n\u003cli\u003egrouping and aggregation\u003c/li\u003e\n\u003cli\u003efeature engineering for machine learning\u003c/li\u003e\n\u003cli\u003edatabase filtering\u003c/li\u003e\n\u003cli\u003eenhance data integrity\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eNANs and Wrong Formats\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eImport the following data:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport pandas as pd\n\ndf = pd.read_csv('data_02/patient_data_dates.csv')\n\n# Allows you to see all rows\npd.set_option('display.max_rows',None)\n\nprint(df)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOutput\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e Index Duration Date Pulse Maxpulse Calories\n0 0 60 '2020/12/01' 110 130 409.1\n1 1 60 '2020/12/02' 117 145 479.0\n2 2 60 '2020/12/03' 103 135 340.0\n3 3 45 '2020/12/04' 109 175 282.4\n4 4 45 '2020/12/05' 117 148 406.0\n5 5 60 '2020/12/06' 102 127 300.0\n6 6 60 '2020/12/07' 110 136 374.0\n7 7 450 '2020/12/08' 104 134 253.3\n8 8 30 '2020/12/09' 109 133 195.1\n9 9 60 '2020/12/10' 98 124 269.0\n10 10 60 '2020/12/11' 103 147 329.3\n11 11 60 '2020/12/12' 100 120 250.7\n12 12 60 '2020/12/12' 100 120 250.7\n13 13 60 '2020/12/13' 106 128 345.3\n14 14 60 '2020/12/14' 104 132 379.3\n15 15 60 '2020/12/15' 98 123 275.0\n16 16 60 '2020/12/16' 98 120 215.2\n17 17 60 '2020/12/17' 100 120 300.0\n18 18 45 '2020/12/18' 90 112 NaN\n19 19 60 '2020/12/19' 103 123 323.0\n20 20 45 '2020/12/20' 97 125 243.0\n21 21 60 '2020/12/21' 108 131 364.2\n22 22 45 NaN 100 119 282.0\n23 23 60 '2020/12/23' 130 101 300.0\n24 24 45 '2020/12/24' 105 132 246.0\n25 25 60 '2020/12/25' 102 126 334.5\n26 26 60 26 12 2020 100 120 250.0\n27 27 60 '2020/12/27' 92 118 241.0\n28 28 60 '2020/12/28' 103 132 NaN\n29 29 60 '2020/12/29' 100 132 280.0\n30 30 60 '2020/12/30' 102 129 380.3\n31 31 60 '2020/12/31' 92 115 243.03\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNow you will notice the following:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eThe data set has an index column that is redundant\u003c/li\u003e\n\u003cli\u003eThe data set contains some empty cells or NaNs (“Date” in row 22, and “Calories” in row 18 and 28, “Maxpulse” in row 1).\u003c/li\u003e\n\u003cli\u003eThe data set contains wrong format (“Date” in row 26).\u003c/li\u003e\n\u003cli\u003eThe data set contains wrong data (“Duration” in row 7 and 13).\u003c/li\u003e\n\u003cli\u003eThe data set contains duplicates (row 11 and 12).\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch4\u003eRemove the columns\u003c/h4\u003e\n\u003cp\u003eNow the index column is redundant and we do not need it. We can remove it with drop method in the following way:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf.drop(['Index'],inplace=True,axis=1)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis method is true for any column you want to remove.\u003c/p\u003e\n\u003ch4\u003eReplace Empty Values - Using fillna\u003c/h4\u003e\n\u003cp\u003eBefore removing rows completely because of a NaN, it is better to try to first modify to work with the data. So we can insert a new value instead. This way you do not have to delete entire rows just because of some empty cells as the other columns may have useful data. The fillna() method allows us to replace empty cells with a value. A common way to replace empty cells, is to calculate the mean (average), median (middle) or mode (most frequent) value of the column. Pandas uses the mean(), median() and mode() methods to calculate the respective values for a specified column:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003ex = df[\"Calories\"].mean()\n\ndf[\"Calories\"].fillna(x, inplace = True) \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWhen inplace=True, it means that the changes made by the fillna operation will be applied directly to the original DataFrame (df in this case), and it will not return a new DataFrame. The inplace parameter modifies the DataFrame in place, without the need to assign the result back to a variable.\u003c/p\u003e\n\u003ch4\u003eWrong Date Format – Convert with to_datetime()\u003c/h4\u003e\n\u003cp\u003eCells with data of wrong format can make it difficult, or even impossible, to analyze data. To fix it, you have two options: remove the rows, or convert all cells in the columns into the same format. In our Data Frame, we have two cells with the wrong format. Check out row 22 and 26, the ‘Date’ column should be a string that represents a date. The best way to fix the date is to convert it a versatile date time format unique to Pandas using to_datetime():\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf['Date'] = pd.to_datetime(df['Date'])\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eTry it out check that the dates look correct. As you can see from the result, the date in row 26 was fixed, but the empty date in row 22 got a NaT (Not a Time) value, in other words an empty value. One way to deal with empty values is simply removing the entire row using df.dropna(inplace = True).\u003c/p\u003e\n\u003cp\u003eIf you only want to remove rows in that Date column you use df.dropna(subset=['Date'], inplace = True).\u003c/p\u003e\n\u003ch4\u003eRemoving Empty Cells – Using dropna\u003c/h4\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eEmpty cells can potentially give you a wrong result when you analyze data. One way to deal with empty cells is to remove rows that contain empty cells. This is usually OK, since data sets can be very big, and removing a few rows will not have a big impact on the result. This can be done using the df.dropna() function. By default, the dropna() method returns a new DataFrame, and will not change the original.\u003c/p\u003e\n\u003cp\u003eIf you want to change the original DataFrame, use the inplace = True argument. The dropna(inplace = True) will NOT return a new DataFrame, but it will remove all rows containing NULL values from the original DataFrame. You will also need to reset the index with df.reset_index(drop=True) as if you remove a row, the row numbers will not be consecutive:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf.dropna(inplace = True)\ndf = df.reset_index(drop=True)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch4\u003eWrong Data – Replace and Remove Rows\u003c/h4\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003e“Wrong data” does not have to be “empty cells” or “wrong format”, it can just be wrong, like if someone registered “199” instead of “1.99”. Sometimes you can spot wrong data by looking at the data set, because you have an expectation of what it should be. If you take a look at our data set, you can see that in row 7, the duration is 450, but for all the other rows the duration is between 30 and 60.\u003c/p\u003e\n\u003cp\u003eIt doesn’t have to be wrong, but taking in consideration that this is the data set of someone’s workout sessions, we conclude with the fact that this person did not work out in 450 minutes.\u003c/p\u003e\n\u003cp\u003eOne way to fix wrong values is to replace them with something else.\u003c/p\u003e\n\u003cp\u003eIn our example, it is most likely a typo, and the value should be \"45\" instead of \"450\", and we could just insert \"45\" in row 7 with\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf.loc[7, 'Duration'] = 45:\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAlternatively, you could have removed that row completely using df.drop(7, inplace = True). For small data sets you might be able to replace the wrong data one by one, but not for big data sets.\u003c/p\u003e\n\u003ch4\u003eRemoving Duplicates – Using drop_duplicates()\u003c/h4\u003e\n\u003cp\u003eDuplicate rows are rows that have been registered more than one time. By taking a look at our test data set, we can assume that row 11 and 12 are duplicates. To discover duplicates, we can use the duplicated() method. The duplicated() method returns a Boolean values for each row. To remove the duplicates use drop_duplicates() method:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf.drop_duplicates(inplace = True)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch4\u003eFinal Cleaned Code\u003c/h4\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport pandas as pd\n\ndf = pd.read_csv('data_02/patient_data_dates.csv')\n\npd.set_option('display.max_rows',None)\n\nprint(df)\n\n# Drop Index Column:\n\ndf.drop(['Index'],inplace=True,axis=1)\n\nprint(df)\n\n# Fill NaNs or empty fields in Calorie Column\n\nx = df[\"Calories\"].mean()\n\ndf[\"Calories\"].fillna(x, inplace = True)\n\nprint(df)\n\n# Convert Wrong Date Format in Date Column\n\ndf['Date'] = pd.to_datetime(df['Date'])\n\n# Drop NaT field in Date Column\n\ndf.dropna(subset=['Date'], inplace = True)\n\nprint(df)\n\n# Remove any rows that have NaNs or empty fields\n# Here only the row 1 for the MaxPulse column as the rest have been resolved\ndf.dropna(inplace = True)\n\n# Reset index\ndf = df.reset_index(drop=True)\n\nprint(df)\n\n# Remove duplicates found in line 10 and 11\ndf.drop_duplicates(inplace = True)\n\ndf = df.reset_index(drop=True)\n\nprint(df)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eApplying Data Transformations\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eNow we will look at more involved data transformation methods, namely aggregations, appending, merging, and filtering. We will demonstrate how to:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eaggregate data using groupby in pandas\u003c/li\u003e\n\u003cli\u003eappend and merge datasets using different join types\u003c/li\u003e\n\u003cli\u003efilter and manipulate data to create new variables.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eAggregation\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003egrouped = df.groupby('class')\n\n# Calculate mean, sum, and count for the squared values\nmean_squared_values = grouped['sepal_length_sq'].mean()\nsum_squared_values = grouped['sepal_length_sq'].sum()\ncount_squared_values = grouped['sepal_length_sq'].count()\n\n# Display the results\nprint(\"Mean of Sepal Length Squared:\")\nprint(mean_squared_values)\n\nprint(\"\\nSum of Sepal Length Squared:\")\nprint(sum_squared_values)\n\nprint(\"\\nCount of Sepal Length Squared:\")\nprint(count_squared_values)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIn Pandas, the groupby function is used to group data based on some criteria, and then you can perform various operations on each group.\u003c/p\u003e\n\u003ch3\u003eAppend \u0026amp; Merge\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eWe will first look at appending two data sets together that have the same column names. For example \"person\u003cem\u003esplit1.csv\" and \"person\u003c/em\u003esplit2.csv:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003eimport pandas as pd\n\n# Read the CSV files into dataframes\ndf1 = pd.read_csv(\"data_02/person_split1.csv\")\ndf2 = pd.read_csv(\"data_02/person_split2.csv\")\n\n# Concatenate the dataframes\ndf = pd.concat([df1, df2], ignore_index=True)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWhat happens if you two tables with different column names but are related, i.e relational data. For example in the one csv file we have : \"id, Company, Name, Department, Job, Title, Skill\" as column names and the other: \"id, University\". If you are familiar with SQL databases then you should know about this.\u003c/p\u003e\n\u003cp\u003eSo if we want to merge these two datasets together. They are related by the \"id\" column. We can do that with the following code:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf1 = pd.read_csv('data_02/person_education.csv')\ndf2 = pd.read_csv('data_02/person_work.csv')\n\n## inner join\ndf_merge = pd.merge(df1,df2,on='id')\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSo in this case we used the pandas merge method to join them both based on their \"id\" column. Here, by default an inner join was used.\u003c/p\u003e\n\u003cp\u003ehttps://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://github.com/ChpcTraining/css2024_notes/assets/157092105/ec912d95-105b-4f6a-93d5-6078cdcac281\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003eAn inner join returns only the rows where there is a match in both dataframes on the specified \"on\" column (in this case, the \"id\" column). If there is no match, the row is excluded from the result.\u003c/p\u003e\n\u003cp\u003eFor example, here an outer join is used\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf_merge = pd.merge(df1, df2, on='id', how='outer')\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAn outer join returns all the rows from both dataframes. If there is no match for a row in either dataframe, the missing values will be filled with NaNs. Left and Right Joins are possible too.\u003c/p\u003e\n\u003ch3\u003eFiltering\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eWe saw in the first lesson using the \"country_data.csv\" we can fitler simply with the following:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e# Filtering data\nprint(df[df['age'] \u0026gt; 30])\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIn a similar way we can filter by a certain category and calculate its mean for \"sepal-length\". Look at the \"iris.csv\" data set. Let us say we only want the \"Iris-versicolor\" category. We can say:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e# Filter data for females (class == 'Iris-versicolor')\niris_versicolor = df[df['class'] == 'Iris-versicolor']\n\n# Calculate the average iris_versicolor_sep_length\navg_iris_versicolor_sep_length = iris_versicolor['sepal_length'].mean()\n\u003c/code\u003e\u003c/pre\u003e\n\u003cblockquote\u003e\n\u003cp\u003e_When we want to do check for a comparison we use double equals \"==\" not a single equals sign \"=\"\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eThere is also a better way to label the \"class\" column since the word \"Iris-\" is redundant. We can remove it in the following way:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf['class'] = df['class'].str.replace('Iris-', '')\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIf you have your own custom change you want to do to each value:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003e# Apply the square to sepal length using a lambda function\ndf['sepal_length_sq'] = df['sepal_length'].apply(lambda x: x**2)\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe \u003ccode style=\"font-size: 20px;\"\u003e.apply(lambda x: x**2)\u003c/code\u003e part is used to apply a function to each element in the selected 'sepal\u003cem\u003elength' column. In this case, a lambda function is used. The lambda function takes an input parameter x (each individual sepal\u003c/em\u003elength value) and squares it.\u003c/p\u003e\n\u003ch2\u003eSummary: Data Cleaning and Pre-processing\u003c/h2\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eObjective: Focus on cleaning and preprocessing extracted data for analysis.\u003c/p\u003e\n\u003cp\u003ePractical Task: Use pandas for tasks like handling missing values, removing duplicates, and transforming data types. Discuss the importance of data quality.\u003c/p\u003e\n\u003cp\u003eThe most common mistake with spreadsheets is that we treat them like lab notebooks, that is relying on context, side notes, margins, spacial layouts and fields and metadata. We can usually interpret thiese things but computers don't view information in the same way. We need to explain to the computer what each step means. It can't firgure out how data is suppose to fit together.\u003c/p\u003e\n\u003cp\u003eWhat is data cleaning and preprocessing. Making it computer ready so it can analyzed.\u003c/p\u003e\n\u003cp\u003eWhat are common things we need to look out for:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eNot filling in zeros - different to blank, a zero is actual data that was measured\u003c/li\u003e\n\u003cli\u003eNull Values - different to zero, null was not measured and thus should be ignored\u003c/li\u003e\n\u003cli\u003eFormatting to make data sheet pretty - highlighting and similar - add a new column instead with info\u003c/li\u003e\n\u003cli\u003eComments in cells - place in separate column\u003c/li\u003e\n\u003cli\u003eEntering more than one piece of information in a cell - only one piece of information per cell\u003c/li\u003e\n\u003cli\u003eUsing problematic field names - avoid spaces, numbers, and special characeters\u003c/li\u003e\n\u003cli\u003eUsing special characters in data - avoid in your data\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch1\u003eLoad\u003c/h1\u003e\n\u003cp\u003eIt is always useful to export the data after you have cleaned and performed the transformations. This can be done various formats. Note, we are outputting the files to a new folder, which we will need to create first.\u003c/p\u003e\n\u003ch3\u003eCSV\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf.to_csv(\"data_02/output/iris_data_cleaned.csv\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIf you don't want the Pandas index column you can specify:\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf.to_csv(\"data_02/output/iris_data_cleaned.csv\", index=False)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eExcel\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf.to_excel(\"data_02/output/iris_data_cleaned.xlsx\", index=False, sheet_name='Sheet1')\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eJSON\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cpre\u003e\u003ccode style=\"font-size: 20px;\"\u003edf.to_json(\"data_02/output/iris_data_cleaned.json\", orient='records')\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIn JSON format, there isn't a concept of a DataFrame index like in tabular data. The orient='records' argument specifies that the JSON file should be structured as a list of records, and the DataFrame index is not considered.\u003c/p\u003e\n\u003ch3\u003eAdvanced Applications\u003c/h3\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eFor advanced users you can learn how to automate ETL processes for efficiency. You can use tools like Apache Airflow or create simple Python scripts to automate ETL pipelines. Schedule tasks to run at specified intervals. You can also use logging to track the progress of an ETL pipeline and handle exceptions.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eWell done if you have gotten this far. Remember to try all these examples yourself.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cem\u003eStart thinking of how you can use your own data in Python\u003c/em\u003e\u003c/p\u003e\n\u003c/blockquote\u003e"},"WIKI_PAGE_REVISION":"8","WIKI_PAGE_SHOW_PATH":"/courses/7413444/pages/2-extract-transform-load","WIKI_PAGE_EDIT_PATH":"/courses/7413444/pages/2-extract-transform-load/edit","WIKI_PAGE_HISTORY_PATH":"/courses/7413444/pages/2-extract-transform-load/revisions","COURSE_ID":"7413444","MODULES_PATH":"/courses/7413444/modules","wiki_page_menu_tools":[],"wiki_index_menu_tools":[],"DISPLAY_SHOW_ALL_LINK":false,"CAN_SET_TODO_DATE":false,"TITLE_AVAILABILITY_PATH":"/api/v1/courses/7413444/page_title_availability","badge_counts":{"submissions":5},"notices":[],"active_context_tab":"pages"};
+    BRANDABLE_CSS_HANDLEBARS_INDEX = [["new_styles_normal_contrast","new_styles_high_contrast","new_styles_normal_contrast_rtl","new_styles_high_contrast_rtl"],{"10":["8300658022",0,"250b5824c2",2],"15":["fc26aa5fd4",0,"f904416063",2],"19":["df5777ed9c"],"61":["f3934dab06","f405852bb2","ee5810890b","3fd9943b9a"],"67":["8b57f54e71",0,"43833dde85",2],"71":["35b89b103a","4304be7d41","58dbfc2651","2932678b1c"],"06":["cb9f63cba6",0,"2be010fc14",2],"f0":["7c947dce20",0,0,0],"c8":["12d5e4d1e8","9f7b02d283","4ebd280f3e","b547456f4c"],"1e":["02e336724a","d7bb142b0a","d7ac7fdfb8","c03b9b261e"],"b3":["8ebc71ebc3","cf8efa05c8","4efdc93a21","fd6d3a9780"],"0c":["c26e82abac",0,"b71e9cbd6d",2],"da":["efb9fe6d7c","edbd1b5e83","a6dc56afb7","dfb2d13098"],"1d":["a3bfcb7961",0,"90682b3bbe",2],"08":["64bff5a97d"],"e2":["11429f119a"],"9f":["35936a18c3",0,0,0],"2b":["abf63f48ef","bf8e135ffe","378e0c136b","9833e305e6"],"2c":["6d919206cd",0,0,0],"c2":["6f2721ae01"],"9c":["ecafc938e4",0,"59e7c22304",2],"c5":["ebf0e1382f","7f587d9a8a","afbdabf23d","0d398196a8"],"f2":["51574f9b13"]}]
+  </script>
+  <script src="./2. Extract, Transform, Load_ CSS 2024_files/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.js" defer="defer"></script>
+  <script src="./2. Extract, Transform, Load_ CSS 2024_files/Harare-3a979b3e76.js" defer="defer"></script>
+  <script src="./2. Extract, Transform, Load_ CSS 2024_files/Johannesburg-e1ae720d47.js" defer="defer"></script>
+  <script src="./2. Extract, Transform, Load_ CSS 2024_files/en_GB-31745e04c9.js" defer="defer"></script>
+  <script src="./2. Extract, Transform, Load_ CSS 2024_files/react-entry-0d2331729ba2f215.js" crossorigin="anonymous" defer="defer"></script>
+  <script src="./2. Extract, Transform, Load_ CSS 2024_files/main-entry-fa6dd94dd54428bc.js" crossorigin="anonymous" defer="defer"></script>
+<script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('wiki_page_show');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+  
+  
+  
+  <!-- fullstory snippet -->
+  <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+    window['_fs_org'] = 'S28S2';
+    window['_fs_namespace'] = 'FS';
+    (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+        o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+        g.log = function(a,b){g("log",[a,b])};
+        g.consent=function(a){g("consent",!arguments.length||a)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+        g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+        if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+        g._v="1.1.1";
+    })(window,document,window['_fs_namespace'],'script','user');
+
+    FS.identify('70000110848077')
+    // These variables are useful for providing filterable values
+    // to product analysts so that we can find just the sessions
+    // that involved a user with a given feature or experience enabled.
+    FS.setUserVars({
+      accountName_str: 'Free for Teacher',
+      feature_homeroom_course_bool: false,
+      roles_str: 'student',
+      k5_user_bool: false,
+      org_type_str: 'Higher Ed'
+    })
+  </script>
+
+  <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+    heap.load("3001039959");
+    heap.clearEventProperties();
+    heap.addEventProperties({'Base.appName': 'Canvas'});
+    setTimeout(() => {
+      if (ENV.current_user_heap_id && ENV.current_user_heap_id !== heap.identity) {
+        heap.identify(ENV.current_user_heap_id);
+      }
+      props = {}
+      if (ENV.current_user_roles) {
+        props['role'] = ENV.current_user_roles[ENV.current_user_roles.length - 1]
+      }
+      if (ENV.DOMAIN_ROOT_ACCOUNT_UUID) {
+        props['Canvas.accountId'] = ENV.DOMAIN_ROOT_ACCOUNT_UUID
+      }
+      if (ENV.DOMAIN_ROOT_ACCOUNT_SFID) {
+        props['Canvas.salesforceAccountId'] = ENV.DOMAIN_ROOT_ACCOUNT_SFID
+      }
+      if (Object.keys(props).length > 0) {
+        heap.addUserProperties(props);
+      }
+    }, 1000);
+  </script>
+  
+<style type="text/css"></style><script src="./2. Extract, Transform, Load_ CSS 2024_files/loader.jsp" async="" type="text/javascript"></script><style type="text/css">.mejs-offscreen{clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:polygon(0px 0,0 0,0 0,0 0);position:absolute!important;height:1px;width:1px;overflow:hidden}.mejs-container{position:relative;background:#000;font-family:Helvetica,Arial,serif;text-align:left;vertical-align:top;text-indent:0}.mejs-fill-container,.mejs-fill-container .mejs-container{width:100%;height:100%}.mejs-fill-container{overflow:hidden}.mejs-container:focus{outline:0}.me-plugin{position:absolute}.mejs-embed,.mejs-embed body{width:100%;height:100%;margin:0;padding:0;background:#000;overflow:hidden}.mejs-fullscreen{overflow:hidden!important}.mejs-container-fullscreen{position:fixed;left:0;top:0;right:0;bottom:0;overflow:hidden;z-index:1000}.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video{width:100%;height:100%}.mejs-clear{clear:both}.mejs-background{position:absolute;top:0;left:0}.mejs-mediaelement{position:absolute;top:0;left:0;width:100%;height:100%}.mejs-poster{position:absolute;top:0;left:0;background-size:contain;background-position:50% 50%;background-repeat:no-repeat}:root .mejs-poster img{display:none}.mejs-poster img{border:0;padding:0}.mejs-overlay{position:absolute;top:0;left:0}.mejs-overlay-play{cursor:pointer}.mejs-overlay-button{position:absolute;top:50%;left:50%;width:100px;height:100px;margin:-50px 0 0 -50px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/746c3af7a145a09239a36e5ef61cfea0.svg) no-repeat}.no-svg .mejs-overlay-button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/716436fb3df0d29e6b37dd62d952676a.png)}.mejs-overlay:hover .mejs-overlay-button{background-position:0 -100px}.mejs-overlay-loading{position:absolute;top:50%;left:50%;width:80px;height:80px;margin:-40px 0 0 -40px;background:#333;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.9);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.9)),to(rgba(0,0,0,.9)));background:-webkit-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-moz-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-o-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-ms-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:linear-gradient(rgba(50,50,50,.9),rgba(0,0,0,.9))}.mejs-overlay-loading span{display:block;width:80px;height:80px;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat}.mejs-container .mejs-controls{position:absolute;list-style-type:none;margin:0;padding:0;bottom:0;left:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));height:30px;width:100%}.mejs-container .mejs-controls div{list-style-type:none;background-image:none;display:block;float:left;margin:0;padding:0;width:26px;height:26px;font-size:11px;line-height:11px;font-family:Helvetica,Arial,serif;border:0}.mejs-controls .mejs-button button{cursor:pointer;display:block;font-size:0;line-height:0;text-decoration:none;margin:7px 5px;padding:0;position:absolute;height:16px;width:16px;border:0;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/40f56f5a736da4effeb790cedb8a52f0.svg) no-repeat}.no-svg .mejs-controls .mejs-button button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/24a0227fbdd3acfd86ff03fc3fc6c8a4.png)}.mejs-controls .mejs-button button:focus{outline:dotted 1px #999}.mejs-container .mejs-controls .mejs-time{color:#fff;display:block;height:17px;width:auto;padding:10px 3px 0;overflow:hidden;text-align:center;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}.mejs-container .mejs-controls .mejs-time a{color:#fff;font-size:11px;line-height:12px;display:block;float:left;margin:1px 2px 0 0;width:auto}.mejs-controls .mejs-play button{background-position:0 0}.mejs-controls .mejs-pause button{background-position:0 -16px}.mejs-controls .mejs-stop button{background-position:-112px 0}.mejs-controls div.mejs-time-rail{direction:ltr;width:200px;padding-top:5px}.mejs-controls .mejs-time-rail span,.mejs-controls .mejs-time-rail a{display:block;position:absolute;width:180px;height:10px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer}.mejs-controls .mejs-time-rail .mejs-time-total{margin:5px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-time-rail .mejs-time-buffering{width:100%;background-image:-o-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,.15)),color-stop(0.75,rgba(255,255,255,.15)),color-stop(0.75,transparent),to(transparent));background-image:-webkit-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-ms-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px;background-size:15px 15px;-webkit-animation:buffering-stripes 2s linear infinite;-moz-animation:buffering-stripes 2s linear infinite;-ms-animation:buffering-stripes 2s linear infinite;-o-animation:buffering-stripes 2s linear infinite;animation:buffering-stripes 2s linear infinite}@-webkit-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-moz-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-ms-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-o-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}.mejs-controls .mejs-time-rail .mejs-time-loaded{background:#3caac8;background:rgba(60,170,200,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(44,124,145,.8)),to(rgba(78,183,212,.8)));background:-webkit-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-moz-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-o-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-ms-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:linear-gradient(rgba(44,124,145,.8),rgba(78,183,212,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-current{background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-handle{display:none;position:absolute;margin:0;width:10px;background:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;cursor:pointer;border:solid 2px #333;top:-2px;text-align:center}.mejs-controls .mejs-time-rail .mejs-time-float{position:absolute;display:none;background:#eee;width:36px;height:17px;border:solid 1px #333;top:-26px;margin-left:-18px;text-align:center;color:#111}.mejs-controls .mejs-time-rail .mejs-time-float-current{margin:2px;width:30px;display:block;text-align:center;left:0}.mejs-controls .mejs-time-rail .mejs-time-float-corner{position:absolute;display:block;width:0;height:0;line-height:0;border:solid 5px #eee;border-color:#eee transparent transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:15px;left:13px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float{width:48px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current{width:44px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner{left:18px}.mejs-controls .mejs-fullscreen-button button{background-position:-32px 0}.mejs-controls .mejs-unfullscreen button{background-position:-32px -16px}.mejs-controls .mejs-volume-button{}.mejs-controls .mejs-mute button{background-position:-16px -16px}.mejs-controls .mejs-unmute button{background-position:-16px 0}.mejs-controls .mejs-volume-button{position:relative}.mejs-controls .mejs-volume-button .mejs-volume-slider{height:115px;width:25px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}.mejs-controls .mejs-volume-button:hover{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.5);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.9);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle{position:absolute;left:4px;top:-3px;width:16px;height:6px;background:#ddd;background:rgba(255,255,255,.9);cursor:N-resize;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;margin:0}.mejs-controls a.mejs-horizontal-volume-slider{height:26px;width:56px;position:relative;display:block;float:left;vertical-align:middle}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle{display:none}.mejs-controls .mejs-captions-button{position:relative}.mejs-controls .mejs-captions-button button{background-position:-48px 0}.mejs-controls .mejs-captions-button .mejs-captions-selector{position:absolute;bottom:26px;right:-51px;width:85px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px 10px 0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-captions-button .mejs-captions-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label{width:55px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-controls .mejs-captions-button .mejs-captions-translations{font-size:10px;margin:0 0 5px}.mejs-chapters{position:absolute;top:0;left:0;border-right:solid 1px #fff;width:10000px;z-index:1}.mejs-chapters .mejs-chapter{position:absolute;float:left;background:#222;background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232, endColorstr=#000000);overflow:hidden;border:0}.mejs-chapters .mejs-chapter .mejs-chapter-block{font-size:11px;color:#fff;padding:5px;display:block;border-right:solid 1px #333;border-bottom:solid 1px #333;cursor:pointer}.mejs-chapters .mejs-chapter .mejs-chapter-block-last{border-right:0}.mejs-chapters .mejs-chapter .mejs-chapter-block:hover{background:#666;background:rgba(102,102,102,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(102,102,102,.7)),to(rgba(50,50,50,.6)));background:-webkit-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-moz-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-o-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-ms-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:linear-gradient(rgba(102,102,102,.7),rgba(50,50,50,.6));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666, endColorstr=#323232)}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title{font-size:12px;font-weight:700;display:block;white-space:nowrap;text-overflow:ellipsis;margin:0 0 3px;line-height:12px}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan{font-size:12px;line-height:12px;margin:3px 0 4px;display:block;white-space:nowrap;text-overflow:ellipsis}.mejs-captions-layer{position:absolute;bottom:0;left:0;text-align:center;line-height:20px;font-size:16px;color:#fff}.mejs-captions-layer a{color:#fff;text-decoration:underline}.mejs-captions-layer[lang=ar]{font-size:20px;font-weight:400}.mejs-captions-position{position:absolute;width:100%;bottom:15px;left:0}.mejs-captions-position-hover{bottom:35px}.mejs-captions-text,.mejs__captions-text *{padding:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(20,20,20,.5);white-space:pre-wrap;-webkit-box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5);box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5)}.me-cannotplay{}.me-cannotplay a{color:#fff;font-weight:700}.me-cannotplay span{padding:15px;display:block}.mejs-controls .mejs-loop-off button{background-position:-64px -16px}.mejs-controls .mejs-loop-on button{background-position:-64px 0}.mejs-controls .mejs-backlight-off button{background-position:-80px -16px}.mejs-controls .mejs-backlight-on button{background-position:-80px 0}.mejs-controls .mejs-picturecontrols-button{background-position:-96px 0}.mejs-contextmenu{position:absolute;width:150px;padding:10px;border-radius:4px;top:0;left:0;background:#fff;border:solid 1px #999;z-index:1001}.mejs-contextmenu .mejs-contextmenu-separator{height:1px;font-size:0;margin:5px 6px;background:#333}.mejs-contextmenu .mejs-contextmenu-item{font-family:Helvetica,Arial,serif;font-size:12px;padding:4px 6px;cursor:pointer;color:#333}.mejs-contextmenu .mejs-contextmenu-item:hover{background:#2C7C91;color:#fff}.mejs-controls .mejs-sourcechooser-button{position:relative}.mejs-controls .mejs-sourcechooser-button button{background-position:-128px 0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector{position:absolute;bottom:26px;right:-10px;width:130px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{width:100px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-postroll-layer{position:absolute;bottom:0;left:0;width:100%;height:100%;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);z-index:1000;overflow:hidden}.mejs-postroll-layer-content{width:100%;height:100%}.mejs-postroll-close{position:absolute;right:0;top:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);color:#fff;padding:4px;z-index:100;cursor:pointer}div.mejs-speed-button{width:46px!important;position:relative}.mejs-controls .mejs-button.mejs-speed-button button{background:transparent;width:36px;font-size:11px;line-height:normal;color:#fff}.mejs-controls .mejs-speed-button .mejs-speed-selector{position:absolute;top:-100px;left:-10px;width:60px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label.mejs-speed-selected{color:rgba(33,248,248,1)}.mejs-controls .mejs-speed-button .mejs-speed-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li{margin:0 0 6px;padding:0 10px;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label{width:60px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:11px;color:#fff;margin-left:5px;cursor:pointer}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li:hover{background-color:#c8c8c8!important;background-color:rgba(255,255,255,.4)!important}.mejs-controls .mejs-button.mejs-jump-forward-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/15e1ac8cbacc2efdf1ac2677de48a253.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-jump-forward-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}.mejs-controls .mejs-button.mejs-skip-back-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/cd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-skip-back-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}</style><style type="text/css">/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* customizations to mediaelementplayer css */
+
+/*
+  Because this file is not proccessed by our brandable_css sass pipeline,
+  it cannot use our sass-direction helpers. So we have to handle RTL manually
+  by putting direction-specific styles in [dir="ltr"] or [dir="rtl"] blocks.
+*/
+/* stylelint-disable property-disallowed-list, declaration-property-value-disallowed-list */
+
+/* good menu widths */
+.mejs-sourcechooser-selector {
+  width: 160px;
+}
+.mejs-sourcechooser-selector label {
+  width: 160px !important;
+}
+
+.mejs-captions-selector {
+  width: 105px;
+}
+[dir="ltr"]  .mejs-captions-selector { text-align: left }
+[dir="rtl"]  .mejs-captions-selector { text-align: right }
+
+.mejs-captions-selector label {
+  width: 70px !important;
+}
+
+/* Subtitile upload link */
+.mejs-captions-selector .upload-track {
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+[dir="ltr"] .mejs-captions-selector .upload-track {
+  margin-right: 0px;
+  margin-left: 5px;
+  float: left;
+}
+[dir="rtl"] .mejs-captions-selector .upload-track {
+  margin-left: 0px;
+  margin-right: 5px;
+  float: right;
+}
+
+/* inherited caption "?" icon for tooltip */
+.mejs-captions-selector .track-tip-container {
+  position: absolute;
+  top: 5px;
+}
+
+/* "x" button to remove a subtitle */
+.mejs-captions-selector a[data-remove] {
+  position: absolute;
+  top: 5px;
+  color: white;
+}
+[dir="ltr"] .mejs-captions-selector a[data-remove] { right: 5px }
+[dir="rtl"] .mejs-captions-selector a[data-remove] { left: 5px }
+
+[dir="ltr"] .mejs-captions-selector .track-tip-container { right: 6px }
+[dir="rtl"] .mejs-captions-selector .track-tip-container { left: 6px }
+
+
+/* style menu items without a radio button */
+.mejs-button [role="menu"] {
+  padding: 0 !important;
+}
+ /* compensate for above 0 padding */
+ .mejs-button [role="menu"] ul li {
+  position: relative;
+  padding: 0 10px !important;
+}
+/* add a hover effect */
+.mejs-button [role="menu"] ul li:hover {
+  background-color: #c8c8c8 !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.mejs-button [role="menu"] ul li input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.mejs-button [role="menu"] ul li input[type="radio"]:not(:checked)+span {
+  display: none;
+}
+
+.mejs-button [role="menu"] ul li input[type="radio"]:checked+span {
+  display: inline;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+}
+
+.mejs-button [role="menu"] ul li label {
+  cursor: pointer;
+}
+[dir="ltr"] .mejs-button [role="menu"] ul li label { margin-left: 5px }
+[dir="rtl"] .mejs-button [role="menu"] ul li label { margin-right: 5px }
+
+
+.mejs-button [role="menu"] label.mejs-selected {
+  color: #21f8f8 !important;
+}
+
+/* stylelint-enable property-disallowed-list, declaration-property-value-disallowed-list */
+</style><script type="text/javascript" src="./2. Extract, Transform, Load_ CSS 2024_files/loader.js"></script><script type="text/javascript" src="./2. Extract, Transform, Load_ CSS 2024_files/jQueryPrivate.js" async=""></script><link type="text/css" href="./2. Extract, Transform, Load_ CSS 2024_files/proactiveresources-base.min.css" rel="stylesheet"><link type="text/css" href="./2. Extract, Transform, Load_ CSS 2024_files/style.css" rel="stylesheet"><link type="text/css" href="./2. Extract, Transform, Load_ CSS 2024_files/support-center.min.css" rel="stylesheet"><link type="text/css" href="./2. Extract, Transform, Load_ CSS 2024_files/override-proactive.css" rel="stylesheet"><link type="text/css" href="./2. Extract, Transform, Load_ CSS 2024_files/support-center-theme-defaults.min.css" rel="stylesheet"><link type="text/css" href="./2. Extract, Transform, Load_ CSS 2024_files/support-center-theme-canvas.min.css" rel="stylesheet"><script type="module" src="./2. Extract, Transform, Load_ CSS 2024_files/impact.js" async=""></script><style data-styled="active" data-styled-version="6.1.8"></style><link type="text/css" href="./2. Extract, Transform, Load_ CSS 2024_files/support-tab-custom.min.css" rel="stylesheet"></head>
+<body class="with-left-side course-menu-expanded padless-content pages primary-nav-expanded full-width context-course_7413444 responsive_student_grades_page webkit chrome no-touch show" style="--eesy-tab-custom-primary-color: #ffffff; --eesy-tab-custom-background-color: #006699; --eesy-tab-custom-position-left: 30px; --eesy-tab-custom-position-right: 30px; --eesy-tab-custom-position-bottom: 50px; --eesy-tab-custom-position-top: 120px; --eesy-tab-custom-border-radius: 0px 0px 0px 0px; --eesy-tab-custom-scale: 0.65;"><div></div>
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1> To access this site, you must enable JavaScript.</h1>
+  </div>
+</noscript>
+
+
+
+
+<div id="flash_message_holder"></div>
+<div id="flash_screenreader_holder" role="alert" aria-live="assertive" aria-relevant="additions" class="screenreader-only" aria-atomic="true"></div>
+
+<div id="application" class="ic-app">
+  
+
+
+
+<header id="mobile-header" class="no-print">
+  <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-hamburger">
+    <i class="icon-solid icon-hamburger"></i>
+    <span id="mobileHeaderInboxUnreadBadge" class="menu-item__badge" style="min-width: 0; top: 12px; height: 12px; right: 6px; display:none;"></span>
+    <span class="screenreader-only">Dashboard</span>
+  </button>
+  <div class="mobile-header-space"></div>
+    <a class="mobile-header-title expandable" href="https://canvas.instructure.com/courses/7413444" role="button" aria-controls="mobileContextNavContainer">
+      <div>CSS4</div>
+        <div>2. Extract, Transform, Load</div>
+    </a>
+    <div class="mobile-header-space"></div>
+    <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-arrow" aria-label="Navigation menu">
+      <i class="icon-arrow-open-down" id="mobileHeaderArrowIcon"></i>
+    </button>
+</header>
+<nav id="mobileContextNavContainer" aria-expanded="false"></nav>
+
+<header id="header" class="ic-app-header no-print ">
+  <a href="https://canvas.instructure.com/courses/7413444/pages/2-extract-transform-load?module_item_id=100843346#content" id="skip_navigation_link">Skip to content</a>
+  <div role="region" class="ic-app-header__main-navigation" aria-label="Global navigation">
+    <ul id="menu" class="ic-app-header__menu-list">
+        <li class="menu-item ic-app-header__menu-list-item ">
+          <a id="global_nav_profile_link" role="button" href="https://canvas.instructure.com/profile/settings" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container">
+              <div aria-hidden="true" class="fs-exclude ic-avatar ">
+                <img src="./2. Extract, Transform, Load_ CSS 2024_files/avatar-50.png" alt="Winston Muthaphuli">
+              </div>
+              <span class="menu-item__badge"></span>
+            </div>
+            <div class="menu-item__text">
+              Account
+            </div>
+          </a>
+        </li>
+      <li class="ic-app-header__menu-list-item ">
+        <a id="global_nav_dashboard_link" href="https://canvas.instructure.com/" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z"></path></svg>
+
+          </div>
+          <div class="menu-item__text">
+            Dashboard
+          </div>
+        </a>
+      </li>
+        <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active" aria-current="page">
+          <a id="global_nav_courses_link" role="button" href="https://canvas.instructure.com/courses" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"></path></svg>
+
+            </div>
+            <div class="menu-item__text">
+              Courses
+            </div>
+          </a>
+        </li>
+      <li class="menu-item ic-app-header__menu-list-item ">
+        <a id="global_nav_calendar_link" href="https://canvas.instructure.com/calendar" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"></path></svg>
+
+          </div>
+          <div class="menu-item__text">
+            Calendar
+          </div>
+        </a>
+      </li>
+      <li class="menu-item ic-app-header__menu-list-item ">
+      <!-- TODO: Add back global search when available -->
+        <a id="global_nav_conversations_link" href="https://canvas.instructure.com/conversations" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container">
+            <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"></path></svg>
+</span>
+            <span class="menu-item__badge"></span>
+          </div>
+          <div class="menu-item__text">
+            Inbox
+          </div>
+        </a>
+      </li>
+        <li class="menu-item ic-app-header__menu-list-item">
+          <a id="global_nav_history_link" role="button" href="https://canvas.instructure.com/courses/7413444/pages/2-extract-transform-load?module_item_id=100843346#" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg viewBox="0 0 1920 1920" class="ic-icon-svg menu-item__icon svg-icon-history" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M960 112.941c-467.125 0-847.059 379.934-847.059 847.059 0 467.125 379.934 847.059 847.059 847.059 467.125 0 847.059-379.934 847.059-847.059 0-467.125-379.934-847.059-847.059-847.059M960 1920C430.645 1920 0 1489.355 0 960S430.645 0 960 0s960 430.645 960 960-430.645 960-960 960m417.905-575.955L903.552 988.28V395.34h112.941v536.47l429.177 321.77-67.765 90.465z" stroke="none" stroke-width="1" fill-rule="evenodd"></path>
+</svg>
+            </div>
+            <div class="menu-item__text">
+              History
+            </div>
+          </a>
+        </li>
+        
+
+      <li class="ic-app-header__menu-list-item">
+        <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+          <div class="menu-item-icon-container" role="presentation">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="ic-icon-svg menu-item__icon svg-icon-information" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M94.42,139h11.15V105.58H94.42ZM83.27,150.19V94.42h33.46v55.76ZM100,72.12A11.15,11.15,0,1,1,111.15,61,11.16,11.16,0,0,1,100,72.12Zm0-33.46A22.31,22.31,0,1,0,122.31,61,22.33,22.33,0,0,0,100,38.66M100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65"></path></svg>
+
+            <span class="menu-item__badge"></span>
+          </div>
+          <div class="menu-item__text">
+            Help
+          </div>
+</a>      </li>
+    </ul>
+  </div>
+  <div class="ic-app-header__secondary-navigation">
+    <ul class="ic-app-header__menu-list">
+      <li class="menu-item ic-app-header__menu-list-item">
+        <a id="primaryNavToggle" role="button" href="https://canvas.instructure.com/courses/7413444/pages/2-extract-transform-load?module_item_id=100843346#" class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle" aria-label="Minimise global navigation" title="Minimise global navigation">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"></path>
+</svg>
+
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div id="global_nav_tray_container"></div>
+  <div id="global_nav_tour"></div>
+</header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="https://canvas.instructure.com/courses/7413444/pages/2-extract-transform-load?module_item_id=100843346#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="./2. Extract, Transform, Load_ CSS 2024_files/saved_resource.html" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide courses navigation menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+
+        <div class="ic-app-crumbs">
+            <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="https://canvas.instructure.com/"><span class="ellipsible"><i class="icon-home" title="My dashboard">
+  <span class="screenreader-only">My dashboard</span>
+</i>
+</span></a></li><li><a href="https://canvas.instructure.com/courses/7413444"><span class="ellipsible">CSS4</span></a></li><li><a href="https://canvas.instructure.com/courses/7413444/pages"><span class="ellipsible">Pages</span></a></li><li><span class="ellipsible">2. Extract, Transform, Load</span></li></ul></nav>
+        </div>
+
+
+        <div class="right-of-crumbs">
+            <div class="TutorialToggleHolder"></div>
+        </div>
+
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side" class="ic-app-course-menu ic-sticky-on list-view" style="display: block">
+          <div id="sticky-container" class="ic-sticky-frame">
+            <nav role="navigation" aria-label="Courses navigation menu"><ul id="section-tabs"><li class="section"><a href="https://canvas.instructure.com/courses/7413444" class="home" tabindex="0">Home</a></li><li class="section"><a href="https://canvas.instructure.com/courses/7413444/grades" class="grades" tabindex="0">Grades<b class="nav-badge">5</b></a></li><li class="section"><a href="https://canvas.instructure.com/courses/7413444/modules" class="modules" tabindex="0">Modules</a></li></ul></nav>
+          </div>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+  
+
+<div id="wiki_page_show">
+
+<div class="show-content user_content clearfix enhanced">
+  
+    <h1 class="page-title">2. Extract, Transform, Load</h1>
+  
+  
+  
+    <h1>Extract</h1>
+<p><span>For this lesson, extract the zipped folder "data_02.zip" from "Week 1: Day 2", and place the folder in your project directory.</span></p>
+<p>&nbsp;</p>
+<h2>Different File Locations</h2>
+<p>&nbsp;</p>
+<h3>Local files</h3>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">import pandas as pd
+
+df = pd.read_csv("data_02/country_data_index.csv")
+
+</code></pre>
+<h3>Files in a different location</h3>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">import pandas as pd
+
+df = pd.read_csv("data_02/country_data_index.csv")
+
+</code></pre>
+<h3>File from a URL</h3>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">import pandas as pd
+
+df = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data")
+</code></pre>
+<p>This data has no header information for each columns, i.e no column names. Let us add some:</p>
+<pre><code style="font-size: 20px;">column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class']
+
+df = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data",header=None, names= column_names)
+</code></pre>
+<h2>Different File Types</h2>
+<p>&nbsp;</p>
+<p><img src="./2. Extract, Transform, Load_ CSS 2024_files/7fbe4893-264e-4140-8d65-81e215fb9d68" alt="image"></p>
+<p>https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html</p>
+<h3>Text Files</h3>
+<p>&nbsp;</p>
+<p>Text file with semi-colon</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_02/Geospatial Data.txt",sep=";")
+</code></pre>
+<h3>Excel</h3>
+<pre><code style="font-size: 20px;"><br>df = pd.read_excel("data_02/residentdoctors.xlsx")
+</code></pre>
+<h3>Json</h3>
+<pre><code style="font-size: 20px;"><br>df = pd.read_json("data_02/student_data.json")
+</code></pre>
+<h2>Other options:</h2>
+<blockquote>
+<p><em>Would you like to see the following:</em></p>
+</blockquote>
+<ul>
+<li>
+<p>Webscraping</p>
+</li>
+<li>
+<p>Connecting to Databases</p>
+</li>
+</ul>
+<blockquote>
+<p><em>Upload some of your own data files to the #chat channel in slack, we can analyze them too!</em></p>
+</blockquote>
+<h1>Transform</h1>
+<p>&nbsp;</p>
+<p>As we saw in the previous lesson, sometimes the data is not in the correct format. There are many ways to clean or transform files. Sometimes this is done in the "Extract" process too, so there is an overlap. Here we will recap on some parameters that the the read<em>csv function has: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read</em>csv.html</p>
+<p>&nbsp;</p>
+<p><img src="./2. Extract, Transform, Load_ CSS 2024_files/f8168c97-cd0e-47e5-82f9-ef8636016bce" alt="image"></p>
+<p>Let us look at a few files with some small issues again.</p>
+<h2>Index Column</h2>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_02/country_data_index.csv")
+</code></pre>
+<p>The "Unnamed: 0" column often appears in pandas DataFrames when reading a CSV file if the CSV file itself has an index column that was not explicitly specified.</p>
+<p>When you read a CSV file into a DataFrame using pd.read_csv(), pandas assigns an index to each row by default. If the CSV file already contains an index column, pandas will create a new index unless you specify the existing column as the index. If no index is specified, pandas will create a default numerical index, and this default index is labeled as "Unnamed: 0" in the DataFrame.</p>
+<p>To avoid the appearance of the "Unnamed: 0" column, you can either specify the existing index column from your CSV file when reading the data, or you can use the index_col parameter to explicitly specify which column you want to use as the index.</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_02/country_data_index.csv",index_col=0)
+</code></pre>
+<p>This will read the CSV file and use the first column as the index, preventing the appearance of the "Unnamed: 0" column in your DataFrame.</p>
+<h2>Skip Rows</h2>
+<p>&nbsp;</p>
+<p>As we saw in the first lesson:</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_01/insurance_data.csv")
+</code></pre>
+<p>We get an error because the number of columns in your CSV file is not consistent across all rows. The read_csv function in pandas assumes a consistent number of columns, but your data seems to have two values in some rows, causing the error.</p>
+<p>We can resolve this by using the "skiprows" parameter to just skip first 5 rows:</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_02/insurance_data.csv",skiprows=5)
+</code></pre>
+<h2>Column Headings</h2>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_02/patient_data.csv")
+</code></pre>
+<p>No headings :(</p>
+<p>Create a list with the heading names you want and add use the parameters "header=None" and "names=column_names":</p>
+<pre><code style="font-size: 20px;">column_names = ["duration", "pulse", "max_pulse", "calories"]
+
+df = pd.read_csv("data_02/patient_data.csv", header=None, names=column_names)
+</code></pre>
+<h2>Unique Delimiter</h2>
+<p>&nbsp;</p>
+<p>As we saw in the first lesson:</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_02/Geospatial Data.txt")
+</code></pre>
+<p>This is a text file with the data separate with a semi-colon, Pandas is expecting a comma. So we use the parameter sep=";"</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_02/Geospatial Data.txt",sep=";")
+</code></pre>
+<p>Also note that the file name has a space in it, which is not recommended.</p>
+<h2>Inconsistent Data Types &amp; Names</h2>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">df = pd.read_excel("data_02/residentdoctors.xlsx")
+</code></pre>
+<ul>
+<li>Some column headings are snake case and other all caps</li>
+<li>AGEDIST has numbers with text</li>
+<li>MARITULSTATUS has text fields</li>
+</ul>
+<p>Note with Excel files, you cannot have it open in Spyder and in Excel too.</p>
+<p>Let us first look at the different groupings:</p>
+<p><img src="./2. Extract, Transform, Load_ CSS 2024_files/aebe6e95-62ef-4ebb-bdb7-f251356d7109" alt="image"></p>
+<p>One way to make this more efficient is to convert it the lower age in grouping. So instead of 30-34yrs it would be 34. This is just one way. You can keep it as is however it will prevent you from doing further numerical analysis on it.</p>
+<p>Add the following code:</p>
+<pre><code style="font-size: 20px;"># Step 1: Extract the lower end of the age range (digits only)
+df['LOWER_AGE'] = df['AGEDIST'].str.extract('(\d+)-')
+</code></pre>
+<p>Pseudo-code: 1. Search for a number followed by a hyphen like "30-" 2. If you find that number, extract the number and ignore the hyphen 3. Put it in a new column called LOWER_AGE</p>
+<p>Then convert that number to from s tring to integer, a whole number.</p>
+<p>This step uses "str.extract()" to capture one or more digits from the 'AGEDIST' column. When you use <code style="font-size: 20px;">df['AGEDIST'].str.extract('(\d+)-')</code>, it applies this regular expression pattern to each element in the 'AGEDIST' column.</p>
+<p>Regular expressions (regex or regexp) are sequences of characters that define a search pattern. It extracts the portion of the string that matches the pattern, which is the one or more consecutive digits before the hyphen in the age range. We won't go over regular expressions much, this was just a demonstration to show you different possibilitles.</p>
+<pre><code style="font-size: 20px;"># Step 2: Convert the new column to float
+df['LOWER_AGE'] = df['LOWER_AGE'].astype(int)
+</code></pre>
+<p>Pseudo-code: 1. Convert all the data to integers 2. Store that value back into LOWER_AGE column</p>
+<p>After extracting the digits, this step converts the resulting column to floating-point numbers using astype(float). Without this conversion, the extracted values would be treated as strings, and any subsequent numeric operations or analysis would not work as expected.</p>
+<h4>Pandas Functions/Methods</h4>
+<p>In pandas, .str, .extract(), and .astype() are all functions or methods that can be applied to a pandas Series object or single column of text data.</p>
+<p>These methods are part of the powerful functionality provided by pandas for manipulating and analyzing data in a DataFrame.</p>
+<p>When you apply .str to a column, it allows you to perform various string operations on each element of the Series. Here we used .extract() to extract certain information from a string. Other string methods: - .upper() makes string/text upper case - .lower() makes string/text lower case - .replace() replaces certain characters with another</p>
+<p><em>Note, they all have brackets as they can accept parameters.</em></p>
+<h3>Working with Dates</h3>
+<p>&nbsp;</p>
+<p>Again there are many ways to do things, sometimes the recommendations are useful and sometimes they are not. Working with dates and time is a tricky subject, as it all depends what you want to do with it. One general problem with dates in Excel is that formatting can be completely different from one laptop to another, you may send an Excel spreadsheet to someone else and the dates maybe completely different which may effect the analysis you did. For example:</p>
+<p><img src="./2. Extract, Transform, Load_ CSS 2024_files/f6819af8-d970-4b51-9bcb-db272166fe97" alt="image"></p>
+<p>Ideally you would want to work with a date format that is completely clear for yourself and the next person working with it. Let us look at this time series data:</p>
+<pre><code style="font-size: 20px;">df = pd.read_csv("data_02/time_series_data.csv")
+</code></pre>
+<p>You will notice the date is in this format: 2020-01-10, however in the US, the day is the middle number and in UK and in most local countries here the middle number is the month - as it should be :)</p>
+<p>Another consideration is that dates are usually interpreted as strings or text in a csv file. This can be checked with the .info() method. So the first thing you need to do is convert it to date format using Pandas.</p>
+<pre><code style="font-size: 20px;"># Convert the 'Date' column to datetime
+df['Date'] = pd.to_datetime(df['Date'])
+</code></pre>
+<p>For example, if your date string is in the "DD-MM-YYYY" format, you would specify the format like this:</p>
+<pre><code style="font-size: 20px;">df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
+</code></pre>
+<p>%d: day %m: month %Y: year</p>
+<p>This not only makes the date column unambiguous but also enables various date-related operations and manipulations. For example:</p>
+<ul>
+<li>filtering by date or range</li>
+<li>calculating time difference</li>
+<li>extracting year, month, day</li>
+<li>add shifts or lags to data</li>
+<li>rolling windows</li>
+<li>timezones</li>
+<li>date arithmetic</li>
+</ul>
+<p>Another option is to split the Date column into separate columns, i.e. year, month and day. For example:</p>
+<pre><code style="font-size: 20px;"># Split the 'Date' column into separate columns for year, month, and day
+df['Year'] = df['Date'].dt.year
+df['Month'] = df['Date'].dt.month
+df['Day'] = df['Date'].dt.day
+</code></pre>
+<p>Output:</p>
+<pre><code style="font-size: 20px;">        Date  Temperature  Year  Month  Day
+0 2020-01-01        27.48  2020      1    1
+1 2020-01-02        24.31  2020      1    2
+2 2020-01-03        28.24  2020      1    3
+3 2020-01-04        32.62  2020      1    4
+4 2020-01-05        23.83  2020      1    5
+5 2020-01-06        23.83  2020      1    6
+6 2020-01-07        32.90  2020      1    7
+7 2020-01-08        28.84  2020      1    8
+...
+</code></pre>
+<p>There may be cases when you need to do this for example:</p>
+<ul>
+<li>time series analysis</li>
+<li>seasonal analysis</li>
+<li>grouping and aggregation</li>
+<li>feature engineering for machine learning</li>
+<li>database filtering</li>
+<li>enhance data integrity</li>
+</ul>
+<h3>NANs and Wrong Formats</h3>
+<p>&nbsp;</p>
+<p>Import the following data:</p>
+<pre><code style="font-size: 20px;">import pandas as pd
+
+df = pd.read_csv('data_02/patient_data_dates.csv')
+
+# Allows you to see all rows
+pd.set_option('display.max_rows',None)
+
+print(df)
+</code></pre>
+<p>Output</p>
+<pre><code style="font-size: 20px;"> Index Duration Date Pulse Maxpulse Calories
+0 0 60 '2020/12/01' 110 130 409.1
+1 1 60 '2020/12/02' 117 145 479.0
+2 2 60 '2020/12/03' 103 135 340.0
+3 3 45 '2020/12/04' 109 175 282.4
+4 4 45 '2020/12/05' 117 148 406.0
+5 5 60 '2020/12/06' 102 127 300.0
+6 6 60 '2020/12/07' 110 136 374.0
+7 7 450 '2020/12/08' 104 134 253.3
+8 8 30 '2020/12/09' 109 133 195.1
+9 9 60 '2020/12/10' 98 124 269.0
+10 10 60 '2020/12/11' 103 147 329.3
+11 11 60 '2020/12/12' 100 120 250.7
+12 12 60 '2020/12/12' 100 120 250.7
+13 13 60 '2020/12/13' 106 128 345.3
+14 14 60 '2020/12/14' 104 132 379.3
+15 15 60 '2020/12/15' 98 123 275.0
+16 16 60 '2020/12/16' 98 120 215.2
+17 17 60 '2020/12/17' 100 120 300.0
+18 18 45 '2020/12/18' 90 112 NaN
+19 19 60 '2020/12/19' 103 123 323.0
+20 20 45 '2020/12/20' 97 125 243.0
+21 21 60 '2020/12/21' 108 131 364.2
+22 22 45 NaN 100 119 282.0
+23 23 60 '2020/12/23' 130 101 300.0
+24 24 45 '2020/12/24' 105 132 246.0
+25 25 60 '2020/12/25' 102 126 334.5
+26 26 60 26 12 2020 100 120 250.0
+27 27 60 '2020/12/27' 92 118 241.0
+28 28 60 '2020/12/28' 103 132 NaN
+29 29 60 '2020/12/29' 100 132 280.0
+30 30 60 '2020/12/30' 102 129 380.3
+31 31 60 '2020/12/31' 92 115 243.03
+</code></pre>
+<p>Now you will notice the following:</p>
+<ol>
+<li>The data set has an index column that is redundant</li>
+<li>The data set contains some empty cells or NaNs (“Date” in row 22, and “Calories” in row 18 and 28, “Maxpulse” in row 1).</li>
+<li>The data set contains wrong format (“Date” in row 26).</li>
+<li>The data set contains wrong data (“Duration” in row 7 and 13).</li>
+<li>The data set contains duplicates (row 11 and 12).</li>
+</ol>
+<h4>Remove the columns</h4>
+<p>Now the index column is redundant and we do not need it. We can remove it with drop method in the following way:</p>
+<pre><code style="font-size: 20px;">df.drop(['Index'],inplace=True,axis=1)
+</code></pre>
+<p>This method is true for any column you want to remove.</p>
+<h4>Replace Empty Values - Using fillna</h4>
+<p>Before removing rows completely because of a NaN, it is better to try to first modify to work with the data. So we can insert a new value instead. This way you do not have to delete entire rows just because of some empty cells as the other columns may have useful data. The fillna() method allows us to replace empty cells with a value. A common way to replace empty cells, is to calculate the mean (average), median (middle) or mode (most frequent) value of the column. Pandas uses the mean(), median() and mode() methods to calculate the respective values for a specified column:</p>
+<pre><code style="font-size: 20px;">x = df["Calories"].mean()
+
+df["Calories"].fillna(x, inplace = True) 
+</code></pre>
+<p>When inplace=True, it means that the changes made by the fillna operation will be applied directly to the original DataFrame (df in this case), and it will not return a new DataFrame. The inplace parameter modifies the DataFrame in place, without the need to assign the result back to a variable.</p>
+<h4>Wrong Date Format – Convert with to_datetime()</h4>
+<p>Cells with data of wrong format can make it difficult, or even impossible, to analyze data. To fix it, you have two options: remove the rows, or convert all cells in the columns into the same format. In our Data Frame, we have two cells with the wrong format. Check out row 22 and 26, the ‘Date’ column should be a string that represents a date. The best way to fix the date is to convert it a versatile date time format unique to Pandas using to_datetime():</p>
+<pre><code style="font-size: 20px;">df['Date'] = pd.to_datetime(df['Date'])
+</code></pre>
+<p>Try it out check that the dates look correct. As you can see from the result, the date in row 26 was fixed, but the empty date in row 22 got a NaT (Not a Time) value, in other words an empty value. One way to deal with empty values is simply removing the entire row using df.dropna(inplace = True).</p>
+<p>If you only want to remove rows in that Date column you use df.dropna(subset=['Date'], inplace = True).</p>
+<h4>Removing Empty Cells – Using dropna</h4>
+<p>&nbsp;</p>
+<p>Empty cells can potentially give you a wrong result when you analyze data. One way to deal with empty cells is to remove rows that contain empty cells. This is usually OK, since data sets can be very big, and removing a few rows will not have a big impact on the result. This can be done using the df.dropna() function. By default, the dropna() method returns a new DataFrame, and will not change the original.</p>
+<p>If you want to change the original DataFrame, use the inplace = True argument. The dropna(inplace = True) will NOT return a new DataFrame, but it will remove all rows containing NULL values from the original DataFrame. You will also need to reset the index with df.reset_index(drop=True) as if you remove a row, the row numbers will not be consecutive:</p>
+<pre><code style="font-size: 20px;">df.dropna(inplace = True)
+df = df.reset_index(drop=True)
+</code></pre>
+<h4>Wrong Data – Replace and Remove Rows</h4>
+<p>&nbsp;</p>
+<p>“Wrong data” does not have to be “empty cells” or “wrong format”, it can just be wrong, like if someone registered “199” instead of “1.99”. Sometimes you can spot wrong data by looking at the data set, because you have an expectation of what it should be. If you take a look at our data set, you can see that in row 7, the duration is 450, but for all the other rows the duration is between 30 and 60.</p>
+<p>It doesn’t have to be wrong, but taking in consideration that this is the data set of someone’s workout sessions, we conclude with the fact that this person did not work out in 450 minutes.</p>
+<p>One way to fix wrong values is to replace them with something else.</p>
+<p>In our example, it is most likely a typo, and the value should be "45" instead of "450", and we could just insert "45" in row 7 with</p>
+<pre><code style="font-size: 20px;">df.loc[7, 'Duration'] = 45:
+</code></pre>
+<p>Alternatively, you could have removed that row completely using df.drop(7, inplace = True). For small data sets you might be able to replace the wrong data one by one, but not for big data sets.</p>
+<h4>Removing Duplicates – Using drop_duplicates()</h4>
+<p>Duplicate rows are rows that have been registered more than one time. By taking a look at our test data set, we can assume that row 11 and 12 are duplicates. To discover duplicates, we can use the duplicated() method. The duplicated() method returns a Boolean values for each row. To remove the duplicates use drop_duplicates() method:</p>
+<pre><code style="font-size: 20px;">df.drop_duplicates(inplace = True)
+</code></pre>
+<h4>Final Cleaned Code</h4>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">import pandas as pd
+
+df = pd.read_csv('data_02/patient_data_dates.csv')
+
+pd.set_option('display.max_rows',None)
+
+print(df)
+
+# Drop Index Column:
+
+df.drop(['Index'],inplace=True,axis=1)
+
+print(df)
+
+# Fill NaNs or empty fields in Calorie Column
+
+x = df["Calories"].mean()
+
+df["Calories"].fillna(x, inplace = True)
+
+print(df)
+
+# Convert Wrong Date Format in Date Column
+
+df['Date'] = pd.to_datetime(df['Date'])
+
+# Drop NaT field in Date Column
+
+df.dropna(subset=['Date'], inplace = True)
+
+print(df)
+
+# Remove any rows that have NaNs or empty fields
+# Here only the row 1 for the MaxPulse column as the rest have been resolved
+df.dropna(inplace = True)
+
+# Reset index
+df = df.reset_index(drop=True)
+
+print(df)
+
+# Remove duplicates found in line 10 and 11
+df.drop_duplicates(inplace = True)
+
+df = df.reset_index(drop=True)
+
+print(df)
+</code></pre>
+<h2>Applying Data Transformations</h2>
+<p>&nbsp;</p>
+<p>Now we will look at more involved data transformation methods, namely aggregations, appending, merging, and filtering. We will demonstrate how to:</p>
+<ul>
+<li>aggregate data using groupby in pandas</li>
+<li>append and merge datasets using different join types</li>
+<li>filter and manipulate data to create new variables.</li>
+</ul>
+<h3>Aggregation</h3>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">grouped = df.groupby('class')
+
+# Calculate mean, sum, and count for the squared values
+mean_squared_values = grouped['sepal_length_sq'].mean()
+sum_squared_values = grouped['sepal_length_sq'].sum()
+count_squared_values = grouped['sepal_length_sq'].count()
+
+# Display the results
+print("Mean of Sepal Length Squared:")
+print(mean_squared_values)
+
+print("\nSum of Sepal Length Squared:")
+print(sum_squared_values)
+
+print("\nCount of Sepal Length Squared:")
+print(count_squared_values)
+</code></pre>
+<p>In Pandas, the groupby function is used to group data based on some criteria, and then you can perform various operations on each group.</p>
+<h3>Append &amp; Merge</h3>
+<p>&nbsp;</p>
+<p>We will first look at appending two data sets together that have the same column names. For example "person<em>split1.csv" and "person</em>split2.csv:</p>
+<pre><code style="font-size: 20px;">import pandas as pd
+
+# Read the CSV files into dataframes
+df1 = pd.read_csv("data_02/person_split1.csv")
+df2 = pd.read_csv("data_02/person_split2.csv")
+
+# Concatenate the dataframes
+df = pd.concat([df1, df2], ignore_index=True)
+</code></pre>
+<p>What happens if you two tables with different column names but are related, i.e relational data. For example in the one csv file we have : "id, Company, Name, Department, Job, Title, Skill" as column names and the other: "id, University". If you are familiar with SQL databases then you should know about this.</p>
+<p>So if we want to merge these two datasets together. They are related by the "id" column. We can do that with the following code:</p>
+<pre><code style="font-size: 20px;">df1 = pd.read_csv('data_02/person_education.csv')
+df2 = pd.read_csv('data_02/person_work.csv')
+
+## inner join
+df_merge = pd.merge(df1,df2,on='id')
+</code></pre>
+<p>So in this case we used the pandas merge method to join them both based on their "id" column. Here, by default an inner join was used.</p>
+<p>https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html</p>
+<p><img src="./2. Extract, Transform, Load_ CSS 2024_files/ec912d95-105b-4f6a-93d5-6078cdcac281" alt="image"></p>
+<p>An inner join returns only the rows where there is a match in both dataframes on the specified "on" column (in this case, the "id" column). If there is no match, the row is excluded from the result.</p>
+<p>For example, here an outer join is used</p>
+<pre><code style="font-size: 20px;">df_merge = pd.merge(df1, df2, on='id', how='outer')
+</code></pre>
+<p>An outer join returns all the rows from both dataframes. If there is no match for a row in either dataframe, the missing values will be filled with NaNs. Left and Right Joins are possible too.</p>
+<h3>Filtering</h3>
+<p>&nbsp;</p>
+<p>We saw in the first lesson using the "country_data.csv" we can fitler simply with the following:</p>
+<pre><code style="font-size: 20px;"># Filtering data
+print(df[df['age'] &gt; 30])
+</code></pre>
+<p>In a similar way we can filter by a certain category and calculate its mean for "sepal-length". Look at the "iris.csv" data set. Let us say we only want the "Iris-versicolor" category. We can say:</p>
+<pre><code style="font-size: 20px;"># Filter data for females (class == 'Iris-versicolor')
+iris_versicolor = df[df['class'] == 'Iris-versicolor']
+
+# Calculate the average iris_versicolor_sep_length
+avg_iris_versicolor_sep_length = iris_versicolor['sepal_length'].mean()
+</code></pre>
+<blockquote>
+<p>_When we want to do check for a comparison we use double equals "==" not a single equals sign "="</p>
+</blockquote>
+<p>There is also a better way to label the "class" column since the word "Iris-" is redundant. We can remove it in the following way:</p>
+<pre><code style="font-size: 20px;">df['class'] = df['class'].str.replace('Iris-', '')
+</code></pre>
+<p>If you have your own custom change you want to do to each value:</p>
+<pre><code style="font-size: 20px;"># Apply the square to sepal length using a lambda function
+df['sepal_length_sq'] = df['sepal_length'].apply(lambda x: x**2)
+
+</code></pre>
+<p>The <code style="font-size: 20px;">.apply(lambda x: x**2)</code> part is used to apply a function to each element in the selected 'sepal<em>length' column. In this case, a lambda function is used. The lambda function takes an input parameter x (each individual sepal</em>length value) and squares it.</p>
+<h2>Summary: Data Cleaning and Pre-processing</h2>
+<p>&nbsp;</p>
+<p>Objective: Focus on cleaning and preprocessing extracted data for analysis.</p>
+<p>Practical Task: Use pandas for tasks like handling missing values, removing duplicates, and transforming data types. Discuss the importance of data quality.</p>
+<p>The most common mistake with spreadsheets is that we treat them like lab notebooks, that is relying on context, side notes, margins, spacial layouts and fields and metadata. We can usually interpret thiese things but computers don't view information in the same way. We need to explain to the computer what each step means. It can't firgure out how data is suppose to fit together.</p>
+<p>What is data cleaning and preprocessing. Making it computer ready so it can analyzed.</p>
+<p>What are common things we need to look out for:</p>
+<ol>
+<li>Not filling in zeros - different to blank, a zero is actual data that was measured</li>
+<li>Null Values - different to zero, null was not measured and thus should be ignored</li>
+<li>Formatting to make data sheet pretty - highlighting and similar - add a new column instead with info</li>
+<li>Comments in cells - place in separate column</li>
+<li>Entering more than one piece of information in a cell - only one piece of information per cell</li>
+<li>Using problematic field names - avoid spaces, numbers, and special characeters</li>
+<li>Using special characters in data - avoid in your data</li>
+</ol>
+<h1>Load</h1>
+<p>It is always useful to export the data after you have cleaned and performed the transformations. This can be done various formats. Note, we are outputting the files to a new folder, which we will need to create first.</p>
+<h3>CSV</h3>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">df.to_csv("data_02/output/iris_data_cleaned.csv")
+</code></pre>
+<p>If you don't want the Pandas index column you can specify:</p>
+<pre><code style="font-size: 20px;">df.to_csv("data_02/output/iris_data_cleaned.csv", index=False)
+</code></pre>
+<h3>Excel</h3>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">df.to_excel("data_02/output/iris_data_cleaned.xlsx", index=False, sheet_name='Sheet1')
+</code></pre>
+<h3>JSON</h3>
+<p>&nbsp;</p>
+<pre><code style="font-size: 20px;">df.to_json("data_02/output/iris_data_cleaned.json", orient='records')
+</code></pre>
+<p>In JSON format, there isn't a concept of a DataFrame index like in tabular data. The orient='records' argument specifies that the JSON file should be structured as a list of records, and the DataFrame index is not considered.</p>
+<h3>Advanced Applications</h3>
+<p>&nbsp;</p>
+<p>For advanced users you can learn how to automate ETL processes for efficiency. You can use tools like Apache Airflow or create simple Python scripts to automate ETL pipelines. Schedule tasks to run at specified intervals. You can also use logging to track the progress of an ETL pipeline and handle exceptions.</p>
+<hr>
+<p>Well done if you have gotten this far. Remember to try all these examples yourself.</p>
+<blockquote>
+<p><em>Start thinking of how you can use your own data in Python</em></p>
+</blockquote>
+  
+</div>
+</div>
+<div id="module_navigation_target"><div style=""><div class="module-sequence-padding"></div>
+<div class="module-sequence-footer" role="navigation" aria-label="Module Navigation">
+  <div class="module-sequence-footer-content">
+    
+      <span class="module-sequence-footer-button--previous" data-tooltip="right" data-html-tooltip-title="&lt;i class=&#39;icon-paperclip&#39;&gt;&lt;/i&gt; data_01.zip">
+          <a href="https://canvas.instructure.com/courses/7413444/modules/items/101257257" class="Button" aria-describedby="msf0-previous-desc" aria-label="Previous Module Item">
+            <i class="icon-mini-arrow-left"></i>Previous
+            <span id="msf0-previous-desc" class="hidden" hidden="">Previous: data_01.zip</span>
+          </a>
+      </span>
+    
+
+    
+      <span class="module-sequence-footer-button--next" data-tooltip="left" data-html-tooltip-title="&lt;i class=&#39;icon-paperclip&#39;&gt;&lt;/i&gt; data_02.zip">
+        <a href="https://canvas.instructure.com/courses/7413444/modules/items/101317463" class="Button" aria-describedby="msf0-next-desc" aria-label="Next Module Item">
+          Next<i class="icon-mini-arrow-right"></i>
+          <span id="msf0-next-desc" class="hidden" hidden="">Next: data_02.zip</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+</div></div>
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">6c0bae24-e6a4-4f9f-b649-df1631a47077</div>
+        <a id="equella_endpoint_url" href="http://oer.equella.com/signon.do">&nbsp;</a>
+        <a id="equella_callback_url" href="https://canvas.instructure.com/external_content/success/equella">&nbsp;</a>
+        <a id="equella_cancel_url" href="https://canvas.instructure.com/external_content/cancel/equella">&nbsp;</a>
+        <a id="equella_action" href="https://canvas.instructure.com/courses/7413444/pages/selectOrAdd">&nbsp;</a>
+          <div id="equella_teaser">Equella is a shared content repository that organizations can use to easily track and reuse content.  This OER repository is a collection of free resources provided by Equella.</div>
+    </div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  <div id="StudentTray__Container"></div>
+    <div class="NewUserTutorialTray__Container"></div>
+  <div id="react-router-portals"></div>
+  
+
+  <iframe src="./2. Extract, Transform, Load_ CSS 2024_files/post_message_forwarding.html" name="post_message_forwarding" title="post_message_forwarding" id="post_message_forwarding" sandbox="allow-scripts allow-same-origin" style="display:none;"></iframe>
+
+
+  <script>
+    Object.assign(
+      ENV,
+      {}
+    )
+  </script>
+
+<script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('inst_fs_service_worker');
+//]]>
+</script>
+  <script src="./2. Extract, Transform, Load_ CSS 2024_files/es_plugin_fft.js" defer="defer"></script>
+
+</div> <!-- #application -->
+
+
+<iframe id="FullStory-iframe" class="fs-hide" style="display: none;" src="./2. Extract, Transform, Load_ CSS 2024_files/saved_resource(1).html"></iframe><div id="nav-tray-portal" style="position: relative; z-index: 99;"></div><div class="tinymce-a11y-checker-container"></div><div id="impact-sr-alert" class="impact-sr-only" aria-live="polite"></div><div class="eesy eesy-tab-custom-container eesy-tab-display-type-sidebar eesy-tab-alignment-right eesy-tab-position-center eesy-tab-behaviour-draggable" style="position: fixed">
+            <div id="eesy-tab-custom-inner" data-eesy-role="support-center-button" class="eesy-tab-custom eesy-tab-custom-btn eesy-tab-corners-type-round-top eesy-tab-expandable">
+                <div class="eesy-tab-custom-btn-content" aria-label="Support" role="button" tabindex="0">
+                        <div class="eesy-tab-custom-btn-icon eesy-tab-icon-position-right ">
+                                <i aria-hidden="true" class="fa fa-question-circle"></i>
+                        </div>
+                        <div class="eesy-tab-custom-btn-text">Support</div>
+                </div>
+                    <div aria-label="Change Support Center position by pressing up and down arrows" class="eesy-tab-custom-btn-drag-handlers" id="eesy-tab-custom-drag-handlers">
+                        <i class="fa fa-chevron-left eesy-tab-custom-btn-handle-left" tabindex="0"></i>
+                        <i class="fa fa-chevron-right eesy-tab-custom-btn-handle-right" tabindex="0"></i>
+                    </div>
+            </div>
+        </div></body></html>
